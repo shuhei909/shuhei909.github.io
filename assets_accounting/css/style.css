@@ -1,0 +1,578 @@
+@charset "UTF-8";
+
+
+/*******************
+Common
+********************/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
+  font-size: 16px;
+  color: #3a3a3a;
+  background: #fff;
+}
+
+a {
+  outline: none;
+  transition: .15s;
+  text-decoration: none;
+}
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contact_mail_btn {
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 10px 10px 60px;
+  background: #ff9606 url(../img/mail_icon.png) no-repeat 15px 17px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 60px;
+}
+
+.contact_mail_btn span {
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/*******************
+Header
+********************/
+
+.header {
+
+}
+
+.header_upper_logo {
+  float: left;
+}
+
+.header_upper {
+  height: 105px;
+  padding: 20px 0;
+}
+
+.header_upper_right {
+  float: right;
+}
+
+.header_upper_right li {
+  float: left;
+  margin-left: 30px;
+}
+
+.header_upper_item-tel {
+  padding-top: 6px;
+}
+
+.header_upper_item-tel img {
+  margin-bottom: 5px;
+}
+
+.header_upper_item-tel p {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .1em;
+  color: #000;
+}
+
+.header_lower {
+  height: 70px;
+  background: url(../img/header_nav_bg.png) repeat-x;
+}
+
+.gNav {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.gNav:after {
+  content: " ";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  bottom: 15px;
+  background: rgba(255,255,255, .1);
+  width: 1px;
+}
+
+.gNav_item {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+  width: 16.6%;
+}
+
+.gNav_item:after {
+  content: " ";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  bottom: 15px;
+  background: rgba(255,255,255, .1);
+  width: 1px;
+}
+
+.gNav_item a {
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  height: 70px;
+  padding: 20px;
+  letter-spacing: .07em;
+}
+
+.gNav_item a span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0;
+  margin-top: 5px;
+}
+
+/*******************
+Footer
+********************/
+
+
+.footer {
+  position: relative;
+}
+
+.footer_toTop {
+  position: absolute;
+  left: 50%;
+  margin-left: -17px;
+  top: 40px;
+}
+
+.footer_content {
+  background: #05234c;
+  color: #fff;
+  padding: 95px 0 60px
+}
+
+.footer a {
+  color: inherit;
+
+}
+
+.footer_left {
+  float: left;
+}
+
+.footer_left img {
+  margin-bottom: 20px;
+}
+
+.footer_left p,
+.footer_left address {
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: normal;
+  letter-spacing: .05em;
+}
+
+.footer_right {
+  margin-top: 30px;
+  float: right;
+  overflow: hidden;
+}
+
+.footer_navList {
+  float: left;
+  margin-left: 80px;
+}
+
+.footer_navList li {
+  margin-bottom: 15px;
+  font-size: 13px;
+  padding-left: 15px;
+  background: url(../img/link_triangle.png) no-repeat left;
+}
+
+.footer_copy {
+  height: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+/*******************
+Top
+********************/
+
+/******** hero image *******/
+
+.heroImage {
+  background: #999;
+  height: 420px;
+  padding-top: 60px;
+  background: url(../img/hero_image.png) no-repeat center;
+  background-size: cover;
+}
+
+.heroImage h2 {
+  text-align: center;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-size: 30px;
+  letter-spacing: .3em;
+  color: #fff;
+}
+
+
+
+/******** appeal msg *******/
+
+.appeal_msg {
+  background: #deebf0;
+  height: 300px;
+}
+
+.appeal_msg_left {
+  width: 50%;
+  float: left;
+  height: 100%;
+  background: url(../img/appeal_msg.png) no-repeat right;
+  background-size: cover;
+}
+
+.appeal_msg_right {
+  width: 50%;
+  float: right;
+  padding: 70px 0 0 70px;
+}
+
+.appeal_msg_right h3 {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  letter-spacing: .3em;
+  font-size: 25px;
+  line-height: 2;
+
+}
+
+
+/******** features *******/
+
+.features {
+  height: 410px;
+  overflow: hidden;
+}
+
+.features_left,
+.features_right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.features_left {
+  float: left;
+}
+
+.features_right {
+  float: left;
+}
+
+.features_tagline-left {
+  background: url(../img/features_1.png) no-repeat right;
+  background-size: cover;
+}
+
+.features_tagline-right {
+  background: url(../img/features_2.png) no-repeat left;
+  background-size: cover;
+}
+
+.features_tagline-left h3,
+.features_tagline-right h3 {
+  padding-top: 160px;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: .25em;
+  position: absolute;
+  width: 500px;
+  color: #fff;
+}
+
+.features_tagline-left h3 {
+  right: 0;
+}
+
+.features_tagline-right h3 {
+  text-align: right;
+}
+
+
+.features_sentece-left p,
+.features_sentece-right p {
+  line-height: 1.75;
+  font-size: 14px;
+  width: 500px;
+}
+
+.features_sentece-right p {
+  padding: 80px 0 0 60px;
+}
+
+.features_sentece-left p {
+  padding: 30px 40px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+
+/******** appeal_msg_lower *******/
+
+.appeal_msg_lower {
+  height: 380px;
+  position: relative;
+}
+
+.appeal_msg_lower_left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: 150px;
+  background: url(../img/appeal_msg_lower.png) no-repeat right;
+  background-size: cover;
+}
+
+.appeal_msg_lower_right {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  padding-top: 60px;
+}
+
+.appeal_msg_lower_right h3 {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  letter-spacing: .07em;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.appeal_msg_list {
+  overflow: hidden;
+  float: right;
+}
+
+.appeal_msg_list li {
+  float: left;
+  margin-left: 27px;
+}
+
+.appeal_msg_list li:first-child {
+  margin: 0;
+}
+
+/******** news *******/
+.news {
+  background: #eee;
+  height: 280px;
+  position: relative;
+}
+
+.news_left {
+  background: #05234c;
+  position: absolute;
+  right: 50%;
+  width: 100%;
+  margin-right: 270px;
+  height: 100%;
+}
+
+.news_left_title {
+  width: 230px;
+  padding-top: 120px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.news_left_title span {
+  padding-left: 10px;
+  display: block;
+}
+
+.news_right {
+  margin-left: 270px;
+  padding: 80px 0 20px 100px;
+  position: relative;
+}
+
+.news_list_item {
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.news_list_item a {
+  color: #000
+}
+
+.news_list_item span {
+  margin-right: 20px;
+}
+
+.news_seeAll a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #05234c;
+  padding-left: 15px;
+  background: url(../img/link_trianlgle_colored.png) no-repeat left;
+}
+
+/******** contact *******/
+
+.contact {
+  padding: 40px 0;
+}
+
+.contact_contactBox {
+  background: url(../img/contact_bg.png) no-repeat;
+  padding: 40px 148px 20px;
+  color: #fff;
+}
+
+.contact_contactBox h3 {
+  font-size: 23px;
+  text-align: center;
+  letter-spacing: .09em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact_contactBox_inner {
+  background: rgba(255,255,255,.4);
+  padding: 30px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+.contact_contactBox_inner:after {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  bottom: 18px;
+  background: rgba(255,255,255, .8);
+  width: 1px;
+}
+
+.contact_contactBox_list {
+  overflow: hidden;
+}
+
+.contact_contactBox_item {
+  width: 50%;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+
+.contact_contactBox_item-tel {
+  position: relative;
+}
+
+.contact_contactBox_item-tel p {
+  margin-top: 5px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.contact_contactBox_item_btn {
+  display: inline-block;
+  text-align: left;
+  line-height: 1.3;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px 10px 60px;
+  background: #ff9606 url(../img/mail_icon.png) no-repeat 15px 17px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 60px;
+}
+
+
+.contact_contactBox_notice {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-left: 30px;
+}
+
+.contact_accessBox {
+  padding: 50px 0 40px;
+  overflow: hidden;
+}
+
+.contact_accessBox_left {
+  float: left;
+  width: 390px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.contact_accessBox_title {
+  margin-bottom: 20px;
+}
+
+.contact_accessBox_title span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact_accessBox_left address {
+  font-style: normal;
+  line-height: 1.6em;
+}
+
+.contact_accessBox_right {
+  float: right;
+  width: 610px;
+}
+
+
+
+
+
