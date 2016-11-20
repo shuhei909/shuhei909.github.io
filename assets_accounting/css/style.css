@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: .6;
+}
+
 .cf:after {
   content: "";
   display: block;
