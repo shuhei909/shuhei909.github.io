@@ -1,45 +1,16 @@
 @charset "UTF-8";
 
+@media screen and (max-width: 415px) {
+
 
 /*******************
 Common
 ********************/
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-family: "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
-  font-size: 16px;
-  color: #3a3a3a;
-  background: #fff;
-}
-
-a {
-  outline: none;
-  transition: .15s;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: .6;
-}
-
-.cf:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 
 .wrapper {
-  width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
   overflow: hidden;
 }
 
@@ -66,28 +37,22 @@ a:hover {
 Header
 ********************/
 
-.header {
-
-}
-
-.header_upper_logo {
-  float: left;
+.header_upper_logo img {
+  width: 220px;
 }
 
 .header_upper {
-  height: 105px;
-  padding: 20px 0;
+  height: 85px;
 }
 
 .header_upper_right {
-  float: right;
+  display: none;
 }
-
 
 .header_upper_right-sp {
-  display: none; /* sp用 */
+  display: block;
 }
-
+/*
 .header_upper_right li {
   float: left;
   margin-left: 30px;
@@ -106,19 +71,19 @@ Header
   font-size: 14px;
   letter-spacing: .1em;
   color: #000;
-}
+}*/
 
 .header_lower {
-  height: 70px;
-  background: url(../img/header_nav_bg.png) repeat-x;
+  display: none;
+  /*background: url(../img/header_nav_bg.png) repeat-x;*/
 }
 
-.gNav {
+/*.gNav {
   display: table;
   width: 100%;
   position: relative;
-}
-
+}*/
+/*
 .gNav:after {
   content: " ";
   position: absolute;
@@ -160,7 +125,7 @@ Header
   font-size: 9px;
   letter-spacing: 0;
   margin-top: 5px;
-}
+}*/
 
 /*******************
 Footer
@@ -238,51 +203,40 @@ Top
 /******** hero image *******/
 
 .heroImage {
-  height: 420px;
-  padding-top: 60px;
-  background: url(../img/hero_image.png) no-repeat center center;
-  background-size: cover;
+  height: 240px;
+  padding-top: 20px;
+  background-position: -80px top;
+  background-size: 120%;
 }
 
 .heroImage h2 {
-  text-align: center;
-  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-  font-size: 30px;
-  letter-spacing: .3em;
-  color: #fff;
+  font-size: 20px;
+  line-height: 2em;
 }
 
 .heroImage h2 br {
-  display: none;
+  display: block;
 }
-
 
 
 /******** appeal msg *******/
 
 .appeal_msg {
-  background: #deebf0;
-  height: 300px;
+  height: 150px;
 }
 
 .appeal_msg_left {
-  width: 50%;
-  float: left;
-  height: 100%;
-  background: url(../img/appeal_msg.png) no-repeat right;
-  background-size: cover;
+  width: 35%;
 }
 
 .appeal_msg_right {
-  width: 50%;
-  float: right;
-  padding: 70px 0 0 70px;
+  width: 65%;
+  padding: 20px 0 0 0;
 }
 
 .appeal_msg_right h3 {
-  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-  letter-spacing: .3em;
-  font-size: 25px;
+  letter-spacing: .2em;
+  font-size: 15px;
   line-height: 2;
 
 }
@@ -291,172 +245,146 @@ Top
 /******** features *******/
 
 .features {
-  height: 410px;
-  overflow: hidden;
+  height: auto;
 }
 
 .features_left,
 .features_right {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .features_left {
-  float: left;
+  float: none;
 }
 
 .features_right {
-  float: right;
+  float: none;
 }
 
-.features_tagline-left {
-  background: url(../img/features_1.png) no-repeat right;
-  background-size: cover;
-}
-
-.features_tagline-right {
-  background: url(../img/features_2.png) no-repeat left;
-  background-size: cover;
+.features_tagline {
+  height: 100px;
 }
 
 .features_tagline-left h3,
 .features_tagline-right h3 {
-  padding-top: 160px;
-  font-size: 24px;
-  line-height: 1.6;
-  letter-spacing: .25em;
-  position: absolute;
-  width: 500px;
-  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  position: static;
+  width: 100%;
 }
-
-.features_tagline-left h3 {
-  right: 0;
-}
-
-.features_tagline-right h3 {
-  text-align: right;
-}
-
 
 .features_sentece-left p,
 .features_sentece-right p {
-  line-height: 1.75;
-  font-size: 14px;
-  width: 500px;
+  width: 100%;
 }
 
 .features_sentece-right p {
-  padding: 80px 0 0 60px;
+  padding: 20px;
 }
 
 .features_sentece-left p {
-  padding: 30px 40px 0 0;
+  padding: 20px;
   position: absolute;
   right: 0;
 }
-
-
-
 
 
 /******** appeal_msg_lower *******/
 
 .appeal_msg_lower {
   height: 380px;
-  position: relative;
 }
 
 .appeal_msg_lower_left {
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  right: 50%;
-  margin-right: 150px;
-  background: url(../img/appeal_msg_lower.png) no-repeat right;
-  background-size: cover;
+  left: 0;
 }
 
 .appeal_msg_lower_right {
   position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  padding-top: 60px;
+  left: 0;
+  top: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 .appeal_msg_lower_right h3 {
-  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-  letter-spacing: .07em;
-  font-size: 25px;
-  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
 .appeal_msg_lower_right h3 br {
-  display: none;
+  display: block;
 }
 
 .appeal_msg_list {
-  overflow: hidden;
-  float: right;
+  float: none;
+  padding: 0 5px;
 }
 
 .appeal_msg_list li {
   float: left;
-  margin-left: 27px;
+  margin: 0 5px;
+  width: calc(33% - 10px);
 }
 
 .appeal_msg_list li:first-child {
-  margin: 0;
+  margin: 0 5px;
+}
+
+.appeal_msg_list li img {
+  width: 100%;
 }
 
 /******** news *******/
 .news {
-  background: #eee;
-  height: 280px;
-  position: relative;
+  height: auto;
 }
 
 .news_left {
   background: #05234c;
-  position: absolute;
-  right: 50%;
-  width: 100%;
-  margin-right: 270px;
-  height: 100%;
+  position: static;
+  margin-right: 0;
+  height: 120px;
 }
 
 .news_left_title {
-  width: 230px;
-  padding-top: 120px;
-  color: #fff;
-  position: absolute;
-  right: 0;
-  font-size: 18px;
-  line-height: 1.4;
+  width: 100%;
+  padding-top: 40px;
+  position: static;
+  text-align: center;
 }
 
 .news_left_title span {
-  padding-left: 10px;
-  display: block;
+  padding-left: 0;
 }
 
 .news_right {
-  padding: 80px 0 20px 100px;
-  position: absolute;
-  left: 50%;
-  margin-left: -270px;
-  width: 750px;
+  padding: 0 0 40px 0;
+  margin-left: 0;
+  position: static;
+  width: 100%;
+  background: #fff;
 }
 
 .news_list_item {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   border-bottom: 1px dashed #ccc;
-  padding-bottom: 15px;
+  padding: 30px 40px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.news_list_item span {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .news_list_item a {
@@ -469,7 +397,7 @@ Top
 
 .news_seeAll a {
   position: absolute;
-  right: 0;
+  right: 20px;
   bottom: 0;
   color: #05234c;
   padding-left: 15px;
@@ -480,33 +408,27 @@ Top
 
 .contact {
   padding: 40px 0;
-  width: 1000px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .contact_contactBox {
-  background: url(../img/contact_bg.png) no-repeat;
-  padding: 40px 148px 20px;
+  padding: 20px 0 20px;
   color: #fff;
 }
 
 .contact_contactBox h3 {
-  font-size: 23px;
-  text-align: center;
-  letter-spacing: .09em;
+  font-size: 16px;
   margin-bottom: 15px;
   font-weight: bold;
+  line-height: 1.4em;
 }
 
 .contact_contactBox h3 br {
-  display: none;
+  display: block;
 }
 
 .contact_contactBox_inner {
-  background: rgba(255,255,255,.4);
-  padding: 30px 0;
-  margin-bottom: 15px;
-  position: relative;
+  padding: 30px 15px;
 }
 
 
@@ -532,47 +454,47 @@ Top
 }
 
 .contact_contactBox_item-tel {
-  position: relative;
+  text-align: left;
+}
+
+.contact_contactBox_item-tel img {
+  width: calc(100% - 20px);
 }
 
 .contact_contactBox_item-tel p {
-  margin-top: 5px;
-  color: #000;
-  font-weight: bold;
-  letter-spacing: .1em;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.contact_contactBox_item-mail {
+  text-align: right;
 }
 
 .contact_contactBox_item_btn {
-  display: inline-block;
-  text-align: left;
-  line-height: 1.3;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 15px 10px 60px;
-  background: #ff9606 url(../img/mail_icon.png) no-repeat 15px 17px;
-  font-weight: bold;
-  font-size: 16px;
-  height: 60px;
+  width: calc(100% - 20px);
+  padding: 8px 8px 10px 40px;
+  background: #ff9606 url(../img/mail_icon.png) no-repeat 10px 15px;
+  background-size: 20px 15px;
+  font-size: 10px;
+  height: auto;
 }
 
-
 .contact_contactBox_notice {
-  font-size: 13px;
+  font-size: 10px;
+  padding: 0 15px;
   line-height: 1.4;
-  margin-left: 30px;
+  margin: 0;
 }
 
 .contact_accessBox {
-  padding: 50px 0 40px;
-  overflow: hidden;
+  padding: 0;
 }
 
 .contact_accessBox_left {
-  float: left;
-  width: 390px;
+  float: none;
+  width: 100%;
   text-align: center;
-  padding-top: 80px;
+  padding: 80px 0 10px;
 }
 
 .contact_accessBox_title {
@@ -586,17 +508,23 @@ Top
   font-size: 20px;
 }
 
-.contact_accessBox_left address {
-  font-style: normal;
-  line-height: 1.6em;
-}
-
 .contact_accessBox_right {
-  float: right;
-  width: 610px;
+  float: none;
+  width: 100%;
+  position: relative;
+  height: 150px;
+  overflow: hidden;
 }
 
+.contact_accessBox_right iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
+} /* responsive */
 
 
 

@@ -5,9 +5,11 @@
   <title>トップページ</title>
   <link rel="stylesheet" href="./css/reset.css" media="screen"/>
   <link rel="stylesheet" href="./css/style.css" media="screen"/>
+  <link rel="stylesheet" href="./css/responsive.css" media="screen"/>
   <link rel="shortcut icon" href="#"><!-- favicon -->
   <link rel="apple-touch-icon" href="#">
   <script type="text/javascript" src="./js/smoothScroll.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <!--[if (gte IE 6)&(lte IE 8)]>
   <script type="text/javascript" src="./js/selectivizr-min.js"></script>
   <![endif]-->
@@ -37,6 +39,9 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="header_upper_right-sp">
+
         </div>
       </div>
     </div>
@@ -70,7 +75,7 @@
   </header>
 
   <section class="heroImage">
-    <h2>長生きすればするほど 感謝される相続対策</h2>
+    <h2>長生きすればするほど <br>感謝される相続対策</h2>
   </section>
 
   <section class="appeal_msg">
@@ -82,7 +87,7 @@
   </section>
 
   <section class="features">
-    <div class="features_left features_tagline-left">
+    <div class="features_left features_tagline features_tagline-left">
       <h3>税理士任せだけにならない<br>申告書作成</h3>
     </div>
     <div class="features_right features_sentece-right">
@@ -102,6 +107,9 @@
   </section>
 
   <section class="features">
+    <div class="features_right features_tagline features_tagline-right">
+      <h3>長生きできない<br>相続対策はしない</h3>
+    </div>
     <div class="features_left features_sentece-left">
       <p>
         「昔にマンション建てたんだけど、こんなに長生きすると思わなかったから、借金が減ってしまって、今は建物と土地の評価が借金を上回ってしまって、以前より相続税かかるみたい。<br>
@@ -113,16 +121,13 @@
         私たちアセッツ会計事務所のスタッフはあらゆる問題について一緒に検討していくことができます。長生きすることでネガティブな要素が発生することない生前対策をご提案いたします。
       </p>
     </div>
-    <div class="features_right features_tagline-right">
-      <h3>長生きできない<br>相続対策はしない</h3>
-    </div>
   </section>
 
   <section class="appeal_msg_lower">
     <div class="appeal_msg_lower_left">
     </div>
     <div class="appeal_msg_lower_right">
-      <h3>相続の問題は信頼のおける税理士にお任せください！</h3>
+      <h3>相続の問題は信頼のおける税理士に<br>お任せください！</h3>
       <ul class="appeal_msg_list">
         <li>
           <a href=""><img src="./img/appeal_sozokuzei.png" alt="相続税申告"></a>
@@ -138,25 +143,23 @@
   </section>
 
   <section class="news">
-    <div class="wrapper">
-      <div class="news_left">
-        <h3 class="news_left_title">新着情報<span>News</span></h3>
-      </div>
-      <div class="news_right">
-        <ul class="news_list">
-          <li class="news_list_item"><a href=""><span>2016.09.01</span> ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</a></li>
-          <li class="news_list_item"><a href=""><span>2016.09.01</span> ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</a></li>
-          <li class="news_list_item"><a href=""><span>2016.09.01</span> ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</a></li>
-        </ul>
-        <p class="news_seeAll"><a href="">一覧を見る</a></p>
-      </div>
+    <div class="news_left">
+      <h3 class="news_left_title">新着情報<span>News</span></h3>
+    </div>
+    <div class="news_right">
+      <ul class="news_list">
+        <li class="news_list_item"><a href=""><span>2016.09.01</span> ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</a></li>
+        <li class="news_list_item"><a href=""><span>2016.09.01</span> ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</a></li>
+        <li class="news_list_item"><a href=""><span>2016.09.01</span> ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</a></li>
+      </ul>
+      <p class="news_seeAll"><a href="">一覧を見る</a></p>
     </div>
   </section>
 
   <section class="contact">
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
       <div class="contact_contactBox">
-        <h3>お気軽にご相談ください。相続に強い税理士が対応致します！</h3>
+        <h3>お気軽にご相談ください。<br>相続に強い税理士が対応致します！</h3>
         <div class="contact_contactBox_inner">
           <ul class="contact_contactBox_list">
             <li class="contact_contactBox_item contact_contactBox_item-tel">
@@ -165,7 +168,7 @@
                 <p>受付時間:平日 10:00～18:00 </p>
               </a>
             </li>
-            <li class="contact_contactBox_item">
+            <li class="contact_contactBox_item contact_contactBox_item-mail">
               <a href="" class="contact_contactBox_item_btn">メールでの<br>お問い合わせはこちら</a>
             </li>
           </ul>
@@ -184,7 +187,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.1283287699007!2d135.38971766618286!3d34.75236003042119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f1e9b9526c25%3A0xa2225286aacb05d7!2z44CSNjYxLTAwMzUg5YW15bqr55yM5bC85bSO5biC5q2m5bqr5LmL6I2Y77yS5LiB55uu77yV4oiS77yR77yXIOeni-WyoeODk-ODqw!5e0!3m2!1sja!2sjp!4v1479540426363" width="600" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <footer class="footer">
