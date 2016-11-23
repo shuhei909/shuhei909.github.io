@@ -42,7 +42,8 @@ Header
 }
 
 .header_upper {
-  height: 85px;
+  height: 64px;
+  padding: 10px 0;
 }
 
 .header_upper_right {
@@ -203,7 +204,7 @@ Top
 /******** hero image *******/
 
 .heroImage {
-  height: 240px;
+  height: 210px;
   padding-top: 20px;
   background-position: -80px top;
   background-size: 120%;
@@ -223,15 +224,20 @@ Top
 
 .appeal_msg {
   height: 150px;
+  position: relative;
 }
 
 .appeal_msg_left {
-  width: 35%;
+  position: absolute;
+  right: 50%;
 }
 
 .appeal_msg_right {
-  width: 65%;
-  padding: 20px 0 0 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: auto;
+  padding: 30px 0 0 0;
 }
 
 .appeal_msg_right h3 {
@@ -268,8 +274,8 @@ Top
 
 .features_tagline-left h3,
 .features_tagline-right h3 {
-  padding: 20px;
-  font-size: 18px;
+  padding: 25px 20px;
+  font-size: 16px;
   position: static;
   width: 100%;
 }
@@ -293,7 +299,7 @@ Top
 /******** appeal_msg_lower *******/
 
 .appeal_msg_lower {
-  height: 380px;
+  height: 250px;
 }
 
 .appeal_msg_lower_left {
@@ -301,7 +307,7 @@ Top
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -50px;
 }
 
 .appeal_msg_lower_right {
