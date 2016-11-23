@@ -52,6 +52,13 @@ Header
 
 .header_upper_right-sp {
   display: block;
+  margin-top: 10px;
+  float: right;
+}
+
+.header_upper_right-sp img {
+  width: 30px;
+  height: 23px;
 }
 /*
 .header_upper_right li {
