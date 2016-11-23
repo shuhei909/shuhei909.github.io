@@ -38,7 +38,7 @@ Header
 ********************/
 
 .header_upper_logo img {
-  width: 220px;
+  width: 200px;
 }
 
 .header_upper {
@@ -206,12 +206,12 @@ Top
 .heroImage {
   height: 210px;
   padding-top: 20px;
-  background-position: -80px top;
-  background-size: 120%;
+  background-position: -20px -20px;
+  background-size: 130%;
 }
 
 .heroImage h2 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2em;
 }
 

@@ -240,7 +240,7 @@ Top
 .heroImage {
   height: 420px;
   padding-top: 60px;
-  background: url(../img/hero_image.png) no-repeat center center;
+  background: url(../img/hero_image3.png) no-repeat center -140px;
   background-size: cover;
 }
 
