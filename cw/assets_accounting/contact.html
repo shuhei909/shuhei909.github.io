@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>トップページ</title>
+  <title>お問い合わせ</title>
   <link rel="stylesheet" href="./css/reset.css" media="screen"/>
   <link rel="stylesheet" href="./css/style.css" media="screen"/>
   <link rel="stylesheet" href="./css/responsive.css" media="screen"/>
@@ -75,115 +75,116 @@
     </div>
   </header>
 
-  <section class="pageTop">
-    <h1>お問い合わせ<br><span>CONTACT</span></h1>
+
+  <section class="c-pageTop c-pageTop-1">
+    <h1 class="c-pageTop_title">お問い合わせ<br><span>CONTACT</span></h1>
   </section>
 
-  <div class="wrapper">
-    <ol class="breadcrumbs_list">
-      <li><a href="">HOME</a></li> >
-      <li>お問い合わせ</li>
-    </ol>
-
-    <section class="">
-      <div class="contact_info">
-        <p>相続についてのご相談はお気軽にお電話またはメールフォームからお問い合わせください。</p>
-        <h2>電話でのお問い合わせ</h2>
-        <div>
-          <img src="./img/tel.png" alt="">
-          <p>受付時間:平日 10:00～18:00 </p>
-        </div>
-        <p>※お客様の都合により時間外・休日対応を希望される場合はご相談ください。</p>
-        <h2>メールでのお問い合わせ</h2>
-        <form>
-          <ul>
-            <li>
-              <label>お名前</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>お名前フリガナ</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>会社名</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>会社名フリガナ</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>電話番号</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>メールアドレス</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>メールアドレス（確認用）</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>メールアドレス（確認用）</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>ご住所</label>
-              <p><input type="text" name="" placeholder="aa" class="form-basic"></p>
-            </li>
-            <li>
-              <label>ご相談内容</label>
-              <p>
-                <input type="radio" name="">
-                <input type="radio" name="">
-                <input type="radio" name="">
-                <input type="radio" name="">
-              </p>
-            </li>
-            <li>
-              <label>ご住所</label>
-              <p>
-                <textarea class="form-basic" placeholder=""></textarea>
-              </p>
-            </li>
-          </ul>
-          <input type="submit" name="" class="contact_btn">
-        </form>
-      </div>
-    </section>
+  <div class="c-breadcrumbs">
+    <div class="wrapper">
+      <ol class="c-breadcrumbs_list">
+        <li><a href="">HOME</a></li><span>></span>
+        <li>お問い合わせ</li>
+      </ol>
+    </div>
   </div>
 
+
   <section class="contact">
-    <div class="contact_contactBox">
+    <div class="wrapper">
+      <div class="contact_info">
+        <p class="contact_info_text">相続についてのご相談はお気軽にお電話またはメールフォームからお問い合わせください。</p>
+        <h2 class="c-titleBar-1">電話でのお問い合わせ</h2>
+        <div class="contact_info_detail">
+          <img src="./img/tel.png" alt="06-6415-6901">
+          <p>受付時間:平日 10:00～18:00 </p>
+        </div>
+        <p class="contact_info_text">※お客様の都合により時間外・休日対応を希望される場合はご相談ください。</p>
+        <h2 class="c-titleBar-1">メールでのお問い合わせ</h2>
+      </div>
+
+      <div class="">
+        <form class="contact_form">
+          <p class="contact_form_required">※は必須項目です。</p>
+          <ul>
+            <li>
+              <label class="contact_form_left">お名前<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">お名前フリガナ<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">会社名<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">会社名フリガナ<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">電話番号<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic contact_form-tel"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">メールアドレス<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic contact_form-mail"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">メールアドレス（確認用）<span>※</span></label>
+              <div class="contact_form_right"><input type="text" name="" placeholder="" class="c-form-basic contact_form-mail"></div>
+            </li>
+            <li>
+              <label class="contact_form_left">ご住所</label>
+              <div class="contact_form_right">
+                <input type="text" name="" placeholder="" class="c-form-basic contact_form-addr">
+                <a href="#" class="contact_form-zip">〒から住所を入力</a>
+                <input type="text" name="" placeholder="" class="c-form-basic">
+              </div>
+            </li>
+            <li>
+              <label class="contact_form_left">ご相談内容<span>※</span></label>
+              <div class="contact_form_right">
+                <label class="contact_form-radio"><input type="radio" name="">亡くなった方名義の不動産について</label>
+                <label class="contact_form-radio"><input type="radio" name="">相続税について</label>
+                <label class="contact_form-radio"><input type="radio" name="">遺言書について</label>
+                <label class="contact_form-radio"><input type="radio" name="">事業承継について</label>
+              </div>
+            </li>
+            <li>
+              <label class="contact_form_left">ご相談内容詳細<span>※</span></label>
+              <div class="contact_form_right">
+                <textarea class="c-form-basic" placeholder="" rows="16"></textarea>
+              </div>
+            </li>
+          </ul>
+          <input type="submit" value="送信する" name="" class="c-btn contact_submitBtn">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-contact">
+    <div class="c-contact_contactBox">
       <h3>お気軽にご相談ください。<br>相続に強い税理士が対応致します！</h3>
-      <div class="contact_contactBox_inner">
-        <ul class="contact_contactBox_list">
-          <li class="contact_contactBox_item contact_contactBox_item-tel">
+      <div class="c-contact_contactBox_inner">
+        <ul class="c-contact_contactBox_list">
+          <li class="c-contact_contactBox_item contact_contactBox_item-tel">
             <a href="tel:0664156901">
               <img src="./img/tel.png" alt="0664156901">
               <p>受付時間:平日 10:00～18:00 </p>
             </a>
           </li>
-          <li class="contact_contactBox_item contact_contactBox_item-mail">
-            <a href="" class="contact_contactBox_item_btn">メールでの<br>お問い合わせはこちら</a>
+          <li class="c-contact_contactBox_item contact_contactBox_item-mail">
+            <a href="" class="c-contact_contactBox_item_btn">メールでの<br>お問い合わせはこちら</a>
           </li>
         </ul>
       </div>
-      <p class="contact_contactBox_notice">
+      <p class="c-contact_contactBox_notice">
         ※事前のご予約で、面談は営業時間外や休業日（土日・祝日）も対応いたします。<br>
         ※メール・FAXは24時間受け付けておりますが、確認次第のご連絡になりますことご了承ください。
       </p>
-    </div>
-    <div class="contact_accessBox">
-      <div class="contact_accessBox_left">
-        <h3 class="contact_accessBox_title"><span>交通アクセス</span>Access</h3>
-        <address>兵庫県尼崎市武庫之荘2丁目5-17<br>秋岡ビル201</address>
-      </div>
-      <div class="contact_accessBox_right">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.1283287699007!2d135.38971766618286!3d34.75236003042119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f1e9b9526c25%3A0xa2225286aacb05d7!2z44CSNjYxLTAwMzUg5YW15bqr55yM5bC85bSO5biC5q2m5bqr5LmL6I2Y77yS5LiB55uu77yV4oiS77yR77yXIOeni-WyoeODk-ODqw!5e0!3m2!1sja!2sjp!4v1479540426363" width="600" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
     </div>
   </section>
 
