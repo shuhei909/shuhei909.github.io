@@ -1262,7 +1262,6 @@ Top
   margin-right: 150px;
 }
 
-
 .am_pageTop_title {
   font-size: 24px;
   font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
@@ -1279,7 +1278,6 @@ Top
   font-size: 14px;
   margin-top: 15px;
 }
-
 
 .am_intro {
   padding: 20px 0 40px;
@@ -1331,7 +1329,9 @@ Top
   padding: 120px 20px 0 0;
 }
 
-
+.am_step {
+  margin-bottom: 80px;
+}
 
 /* step list component */
 
@@ -1357,6 +1357,10 @@ Top
   font-size: 18px;
   letter-spacing: .07em;
   font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.c-step_item_num-l {
+  height: 110px;
 }
 
 .c-step_item_num:after {
