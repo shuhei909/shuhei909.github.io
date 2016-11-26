@@ -204,14 +204,18 @@ Conponents
 }
 
 .c-halfLayout_left_tagline {
-  padding-top: 160px;
   font-size: 24px;
   line-height: 1.6;
   letter-spacing: .25em;
   position: absolute;
   right: 0;
   width: 500px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0%, -50%);
   color: #fff;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
 
 .c-halfLayout_left_sentence {
@@ -228,6 +232,12 @@ Conponents
   line-height: 1.6;
   letter-spacing: .25em;
   line-height: 2;
+  text-align: right;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0%, -50%);
 }
 
 .c-halfLayout_right_sentence {
@@ -251,7 +261,9 @@ Conponents
   color: #00224c;
 }
 
-
+.c-seif {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
 
 /*******************
 Header
@@ -433,7 +445,7 @@ Top
 .heroImage {
   height: 420px;
   padding-top: 60px;
-  background: url(../img/hero_image3.png) no-repeat center -140px;
+  background: url(../img/index_hero_img.png) no-repeat center -140px;
   background-size: cover;
 }
 
@@ -567,8 +579,8 @@ Top
   position: absolute;
   top: 0;
   right: 50%;
-  margin-right: 150px;
-  background: url(../img/appeal_msg_lower.png) no-repeat right;
+  margin-right: 90px;
+  background: url(../img/appeal_msg_lower.png) no-repeat top right;
   background-size: cover;
 }
 
@@ -874,6 +886,65 @@ Top
   margin-left: 30px;
 }
 
+/******** contact component inside *******/
+
+.c-contact_step {
+  background: #f4f4f4;
+  padding: 30px 0;
+  margin-bottom: 15px;
+  position: relative;
+  margin-top: 20px;
+  width: 680px;
+}
+
+
+.c-contact_step:after {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  bottom: 18px;
+  background: #e6e6e6;
+  width: 1px;
+}
+
+.c-contact_step_list {
+  overflow: hidden;
+}
+
+.c-contact_step_item {
+  width: 50%;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+
+.c-contact_step_item_tel {
+  position: relative;
+}
+
+.c-contact_step_item_tel p {
+  margin-top: 5px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: .1em;
+  font-size: 16px;
+}
+
+.c-contact_step_item_btn {
+  display: inline-block;
+  text-align: left;
+  line-height: 1.3;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px 10px 60px;
+  background: #ff9606 url(../img/mail_icon.png) no-repeat 15px 17px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 60px;
+}
+
 
 /* top access */
 
@@ -918,7 +989,8 @@ Top
 /******** second opinion *******/
 
 .so_tagline {
-  background: #ccc;
+  background: url(../img/second_opinion.png) no-repeat;
+  background-size: cover;
 }
 
 .so_sentence {
@@ -1023,14 +1095,20 @@ Top
 
 /******** company prifle *******/
 
-.companyProfile {
-  padding: 60px 0;
+.companyProfile_tagline {
+  background: url(../img/company_profile.png) no-repeat;
+  background-size: cover;
 }
 
-.companyProfile .c-titleBar-1 {
-  width: 660px;
-  margin-left: auto;
-  margin-right: auto;
+.companyProfile_tagline span {
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: .2em;
+}
+
+.companyProfile {
+  padding: 60px 0;
 }
 
 .companyProfile_item {
@@ -1068,13 +1146,7 @@ Top
 }
 
 .memberProfile {
-
-}
-
-.memberProfile .c-titleBar-1 {
-  width: 660px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .profile_list_overall {
@@ -1091,6 +1163,42 @@ Top
   background: #05234c;
   color: #fff;
   height: 100%;
+}
+
+.profile_list_left_name {
+  padding: 100px 80px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+.profile_list_left h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: .08em;
+  text-align: left;
+}
+
+.profile_list_left h4 span {
+  display: block;
+  font-size: 11px;
+  margin-top: 10px;
+  letter-spacing: .3em;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.profile_list_left p {
+  color: #fff;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  font-size: 16px;
+  letter-spacing: .3em;
+  border-top: 1px solid #fff;
+  text-align: right;
+  position: absolute;
+  right: 80px;
+  padding-top: 18px;
+  top: 160px;
+  width: 100%;
 }
 
 .profile_list_right {
@@ -1139,6 +1247,40 @@ Top
 
 /******** antemortem measure *******/
 
+.am_pageTop {
+  height: 230px;
+  background: #d7e4e0;
+  position: relative;
+}
+
+.am_pageTop_bg {
+  background: url(../img/antemortem_measures_top.png) no-repeat left center;
+  height: 230px;
+  width: 500px;
+  position: absolute;
+  right: 50%;
+  margin-right: 150px;
+}
+
+
+.am_pageTop_title {
+  font-size: 24px;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  letter-spacing: .25em;
+  position: absolute;
+  right: 50%;
+  margin-right: -335px;
+  text-align: right;
+  top: 80px;
+}
+
+.am_pageTop_title span {
+  display: block;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
 .am_intro {
   padding: 20px 0 40px;
 }
@@ -1155,9 +1297,40 @@ Top
   margin-bottom: 80px;
 }
 
-.am_tagline {
-  background: #ccc;
+.am_features .c-halfLayout {
+  height: 426px;
 }
+
+.am_features_1 {
+  background: url(../img/am_features_1.png) no-repeat;
+  background-size: cover;
+}
+
+.am_features_2 {
+  background: url(../img/am_features_2.png) no-repeat;
+  background-size: cover;
+}
+
+.am_features h3 span {
+  background: rgba(255, 255, 255, .2);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  padding-left: 6px;
+}
+
+.am_features .c-halfLayout_right_sentence {
+  padding: 80px 0 0 20px;
+}
+
+.am_features .c-halfLayout_left_sentence {
+  padding: 120px 20px 0 0;
+}
+
 
 
 /* step list component */
@@ -1219,7 +1392,16 @@ Top
 /******** inheritance tax return *******/
 
 .itr {
-  background: #ccc;
+  height: 426px;
+}
+
+.itr_bg {
+  background: url(../img/itr_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.itr .c-halfLayout_left_sentence {
+  padding: 120px 20px 0 0;
 }
 
 .itr_step {
