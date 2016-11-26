@@ -19,38 +19,40 @@
 
   <header class="header">
     <h1 class="header_logo">
-      <img src="http://dummyimage.com/300x60/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+      <a href="">
+        <img src="./img/header/logo.svg" alt="ちんたいちょう">
+      </a>
     </h1>
     <div class="header_right">
       <nav class="header_nav">
         <ul>
           <li>
-            <a href="#nowhere">入居者対応</a>
+            <a href="#nowhere" class="header_item-ocupant">入居者対応</a>
           </li>
           <li>
-            <a href="#nowhere">Q&amp;A</a>
+            <a href="#nowhere" class="header_item-qanda">Q&amp;A</a>
           </li>
           <li>
-            <a href="#nowhere">Web相談間口</a>
+            <a href="#nowhere" class="header_item-webcontact">Web相談間口</a>
           </li>
           <li>
-            <a href="#nowhere">用語集</a>
+            <a href="#nowhere" class="header_item-dictionary">用語集</a>
           </li>
           <li>
-            <a href="#nowhere">帳票サンプル</a>
+            <a href="#nowhere" class="header_item-booksample">帳票サンプル</a>
           </li>
           <li>
-            <a href="#nowhere">PM講座</a>
+            <a href="#nowhere" class="header_item-pm">PM講座</a>
           </li>
           <li>
-            <a href="#nowhere">分析</a>
+            <a href="#nowhere" class="header_item-analysis">分析</a>
           </li>
         </ul>
       </nav>
       <div class="header_right_account">
         <ul>
-          <li><a href="">個人設定</a></li>
-          <li><a href="">ログアウト</a></li>
+          <li><a href="" class="header_right_account-setting">個人設定</a></li>
+          <li><a href="" class="header_right_account-logout">ログアウト</a></li>
         </ul>
       </div>
     </div>
@@ -58,8 +60,9 @@
 
   <aside class="sideMenu">
     <h2 class="sideMenu_title">入居者対応</h2>
-    <form>
-      <input type="text" name="" placeholder="クイック検索" class="form-basic">
+    <form class="sideMenu_search">
+      <input type="text" name="" placeholder="クイック検索" class="form-basic sideMenu_search">
+      <input type="image" alt="送信" name="" src="./img/sidebar/search.svg">
     </form>
     <ul class="sideMenu_list">
       <li class="sideMenu_item"><a href="">エアコン</a></li>
@@ -79,8 +82,8 @@
 
   <div class="main_container">
     <ol class="breadcrumbs_list">
-      <li class="breadcrumbs_item"><a href="">HOME</a></li>
-      <li class="breadcrumbs_item"><a href="">入居者対応</a></li>
+      <li class="breadcrumbs_item"><a href="">HOME</a></li> /
+      <li class="breadcrumbs_item">入居者対応</li>
     </ol>
 
     <div class="searchArea">
