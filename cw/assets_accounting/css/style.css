@@ -92,6 +92,8 @@ Conponents
   left: 50%;
   margin-left: -30px;
   top: 30px;
+  width: 100%;
+  text-align: left;
 }
 
 .c-pageTop_title span {
@@ -132,18 +134,30 @@ Conponents
   font-weight: bold;
   border: 1px solid #999;
   font-size: 22px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   letter-spacing: .05em;
   text-align: center;
-  border-bottom: 6px solid #00224c;
+  border-bottom: 6px solid #114183;
+  width: 660px;
 }
 
 .c-titleBar-2 {
-
+  font-size: 25px;
+  padding: 8px 30px;
+  background: #114183;
+  font-weight: bold;
+  color: #fff;
+  margin: 40px 0;
+  letter-spacing: .1em;
 }
 
 .c-titleBar-3 {
-
+  color: #e68500;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: .2em;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
 
 
@@ -201,11 +215,24 @@ Conponents
 }
 
 .c-halfLayout_left_sentence {
-  
+  position: absolute;
+  width: 500px;
+  right: 0;
+  line-height: 2;
+}
+
+.c-halfLayout_right_tagline {
+  width: 500px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: .25em;
+  line-height: 2;
 }
 
 .c-halfLayout_right_sentence {
   width: 500px;
+  line-height: 2;
 }
 
 
@@ -333,7 +360,7 @@ Footer
 
 
 .footer {
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -823,6 +850,7 @@ Top
   color: #000;
   font-weight: bold;
   letter-spacing: .1em;
+  font-size: 16px;
 }
 
 .c-contact_contactBox_item_btn {
@@ -941,9 +969,372 @@ Top
   border: 5px solid #fff;
 }
 
+/******** questions *******/
+
+.questions_list {
+  margin-bottom: 100px;
+}
+
+.questions_item {
+  padding: 0 30px 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.questions_item_q {
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 50px;
+}
+
+.questions_item_a {
+  position: relative;
+  padding-left: 50px;
+}
+
+.questions_item_q:before,
+.questions_item_a:before {
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+.questions_item_q:before {
+  content: 'Q';
+  background: #103d7a;
+}
+
+.questions_item_a:before {
+  content: 'A';
+  background: #ff9606;
+}
 
 
+/******** company prifle *******/
+
+.companyProfile {
+  padding: 60px 0;
+}
+
+.companyProfile .c-titleBar-1 {
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.companyProfile_item {
+  padding: 20px 0 20px 170px;
+  margin-bottom: 30px;
+  line-height: 2.3;
+  position: relative;
+}
+
+.companyProfile_item:before {
+  background: #103d7a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  left: 80px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.companyProfile_item-1:before {
+  content: '1';
+}
+
+.companyProfile_item-2:before {
+  content: '2';
+}
+
+.companyProfile_item-3:before {
+  content: '3';
+}
+
+.memberProfile {
+
+}
+
+.memberProfile .c-titleBar-1 {
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile_list_overall {
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.profile_list_left {
+  position: absolute;
+  left: 0;
+  margin-left: -85px;
+  width: 50%;
+  background: #05234c;
+  color: #fff;
+  height: 100%;
+}
+
+.profile_list_right {
+  float: right;
+  width: 50%;
+}
+
+.profile_list_right p {
+  line-height: 2.2;
+}
+
+.profile_list_right span {
+  color: #103d7a;
+  font-weight: bold;
+}
+
+.profile_list_message {
+  padding: 40px 30px 80px;
+  line-height: 2.2;
+}
+
+.profile_list_message_title {
+  color: #103d7a;
+  font-weight: bold;
+}
+
+.companyProfile_overall {
+  width: 660px;
+  margin: 0 auto 80px;
+}
+
+.companyProfile_overall_content {
+  padding: 40px 0 40px 130px;
+  font-size: 16px;
+}
+
+.companyProfile_overall_item {
+  margin-bottom: 15px;
+}
+
+.companyProfile_overall_item span {
+  color: #103d7a;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+/******** antemortem measure *******/
+
+.am_intro {
+  padding: 20px 0 40px;
+}
+
+.am_intro .wrapper {
+  padding: 0 30px;
+}
+
+.am_intro_text {
+  line-height: 2;
+}
+
+.am_features {
+  margin-bottom: 80px;
+}
+
+.am_tagline {
+  background: #ccc;
+}
 
 
+/* step list component */
+
+.c-step_list {
+  padding-left: 50px;
+}
+
+.c-step_item {
+  position: relative;
+  padding-left: 120px;
+  margin-bottom: 40px;
+}
+
+.c-step_item_num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+  background: #114183;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: .07em;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.c-step_item_num:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 45px solid transparent;
+  border-top: 18px solid #114183;
+}
+
+.c-step_item_num span {
+  font-size: 24px;
+  margin-top: 5px;
+  display: block;
+}
+
+.c-step_item_title {
+  color: #00224c;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: .08em;
+}
+
+.c-step_item_text {
+  line-height: 2;
+}
+
+
+/******** inheritance tax return *******/
+
+.itr {
+  background: #ccc;
+}
+
+.itr_step {
+  margin-bottom: 80px;
+}
+
+
+.itr_step .c-step_item {
+  margin-bottom: 60px;
+}
+
+/******** prive list *******/
+
+.pl_intro {
+  padding: 20px 0;
+}
+
+.pl_intro .wrapper {
+  padding: 0 30px;
+}
+
+.pl_intro_text {
+  line-height: 2.2;
+}
+
+.pl_table {
+  margin: 40px 0;
+}
+
+.pl_table th,
+.pl_table td {
+  padding: 20px 0;
+  font-size: 18px;
+  color: #00224c;
+  letter-spacing: .1em;
+}
+
+.pl_table td {
+  border-bottom: 1px solid #626262;
+}
+
+.pl_table_content {
+  padding: 0 100px;
+}
+
+.pl_table_upper {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.pl_table_upper thead th {
+  background: #ffca82;
+  border-bottom: 1px solid #626262;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.pl_table_upper thead th:first-child {
+  border-right: 1px solid #626262;
+}
+
+.pl_table_upper tbody th {
+  border-bottom: 1px solid #626262;
+  border-right: 1px solid #626262;
+  width: 50%;
+  text-align: left;
+  padding-left: 110px;
+}
+
+.pl_table_upper tbody td {
+  color: #c00013;
+  font-weight: bold;
+  background: #fff4e5;
+  padding-left: 160px;
+}
+
+.pl_table_upper tbody td span {
+  color: #00224c;
+  font-weight: normal;
+}
+
+.pl_table_lower {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.pl_table_lower th {
+  border: 1px solid #626262;
+  border-left: 0;
+  width: 50%;
+  background: #ffca82;
+  font-weight: bold;
+}
+
+.pl_table_lower td {
+  border-top: 1px solid #626262;
+  text-align: center;
+  width: 50%;
+}
+
+.pl_table_lower td span {
+  font-size: 16px;
+}
+
+.pl_table_notice {
+  line-height: 2;
+}
+
+.otherPrice_content {
+  padding: 0 30px;
+}
+
+.otherPrice_content p {
+  line-height: 2.2;
+  margin-bottom: 80px;
+}
 
 
