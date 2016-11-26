@@ -85,23 +85,42 @@ Conponents
 }
 
 .c-pageTop_title {
+  display: inline-block;
   font-size: 24px;
   font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
   letter-spacing: .25em;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  top: 30px;
-  width: 100%;
   text-align: left;
+  padding: 4px 0 0 70px;
 }
 
 .c-pageTop_title span {
   display: block;
-  margin-top: 10px;
+  margin: 10px 0 2px 2px;
   font-size: 14px;
-  position: absolute;
-  left: 2px;
+}
+
+.c-pageTop_title-itr {
+  background: url(../img/pg_top_icon_itr.png) no-repeat left center;
+}
+
+.c-pageTop_title-cp {
+  background: url(../img/pg_top_icon_cp.png) no-repeat left center;
+}
+
+.c-pageTop_title-contact {
+  background: url(../img/pg_top_icon_contact.png) no-repeat left center;
+}
+
+.c-pageTop_title-price {
+  background: url(../img/pg_top_icon_price.png) no-repeat left center;
+}
+
+.c-pageTop_title-so {
+  background: url(../img/pg_top_icon_so.png) no-repeat left center;
+}
+
+.c-pageTop_title-question {
+  padding-left: 0;
 }
 
 /* breadcrumbs */
