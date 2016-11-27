@@ -2,11 +2,9 @@
 
 @media screen and (max-width: 415px) {
 
-
-/*******************
+/*
 Common
-********************/
-
+------------------------------------------------------------*/
 
 .wrapper {
   width: 100%;
@@ -33,115 +31,11 @@ Common
   font-weight: bold;
 }
 
+/*
+Layouts
+------------------------------------------------------------*/
 
-
-/*******************
-Conponents
-********************/
-
-/* page top */
-.c-pageTop {
-  height: 80px;
-  padding: 15px 0;
-}
-
-.c-pageTop_title {
-  font-size: 18px;
-  padding: 4px 0 0 50px;
-  background-size: 40px 40px;
-}
-
-.c-pageTop_title span {
-  font-size: 10px;
-}
-
-.c-pageTop_title-question {
-  padding-left: 0;
-}
-
-/* title bar */
-
-.c-titleBar-1 {
-  width: 100%;
-  font-size: 18px;
-}
-
-.c-titleBar-2 {
-  font-size: 18px;
-  padding: 10px 20px;
-}
-
-.c-titleBar-3 {
-  line-height: 1.4;
-  font-size: 18px;
-}
-
-
-/* half layout */
-
-.c-halfLayout {
-  height: auto;
-}
-
-.c-halfLayout_left {
-  float: none;
-}
-
-.c-halfLayout_right {
-  float: none;
-}
-
-.c-halfLayout_left,
-.c-halfLayout_right {
-  width: 100%;
-}
-
-.c-halfLayout_tagline {
-  height: 100px;
-}
-
-.c-halfLayout_left_tagline {
-  font-size: 16px;
-  right: auto;
-  left: 20px;
-  width: auto;
-}
-
-.c-halfLayout_left_sentence {
-  position: static;
-  width: 100%;
-}
-
-.c-halfLayout_right_tagline {
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-  left: 20px;
-}
-
-.c-halfLayout_right_sentence {
-  width: 100%;
-  line-height: 2;
-  padding: 20px;
-}
-
-
-.c-linkContact {
-  width: 100%;
-  padding: 0 20px;
-}
-
-.c-linkContact a {
-  padding: 10px 20px;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-
-
-/*******************
-Header
-********************/
+/* Header */
 
 .header_upper_logo img {
   width: 200px;
@@ -169,13 +63,9 @@ Header
 
 .header_lower {
   display: none;
-  /*background: url(../img/header_nav_bg.png) repeat-x;*/
 }
 
-/*******************
-Footer
-********************/
-
+/* Footer */
 
 .footer {
   position: relative;
@@ -240,12 +130,215 @@ Footer
   font-size: 10px;
 }
 
+/*
+Componets
+------------------------------------------------------------*/
 
-/*******************
+/* page top */
+
+.c-pageTop {
+  height: 80px;
+  padding: 15px 0;
+}
+
+.c-pageTop_title {
+  font-size: 18px;
+  padding: 4px 0 0 50px;
+  background-size: 40px 40px;
+}
+
+.c-pageTop_title span {
+  font-size: 10px;
+}
+
+.c-pageTop_title-question {
+  padding-left: 0;
+}
+
+/* title bar */
+
+.c-titleBar-1 {
+  width: 100%;
+  font-size: 18px;
+}
+
+.c-titleBar-2 {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.c-titleBar-3 {
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+/* half layout */
+
+.c-halfLayout {
+  height: auto;
+}
+
+.c-halfLayout_left {
+  float: none;
+}
+
+.c-halfLayout_right {
+  float: none;
+}
+
+.c-halfLayout_left,
+.c-halfLayout_right {
+  width: 100%;
+}
+
+.c-halfLayout_tagline {
+  height: 100px;
+}
+
+.c-halfLayout_left_tagline {
+  font-size: 16px;
+  right: auto;
+  left: 20px;
+  width: auto;
+}
+
+.c-halfLayout_left_sentence {
+  position: static;
+  width: 100%;
+}
+
+.c-halfLayout_right_tagline {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  left: 20px;
+}
+
+.c-halfLayout_right_sentence {
+  width: 100%;
+  line-height: 2;
+  padding: 20px;
+}
+
+.c-linkContact {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.c-linkContact a {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* contact component */
+
+.c-contact {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.c-contact_contactBox {
+  padding: 20px 0 20px;
+  color: #fff;
+}
+
+.c-contact_contactBox h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.c-contact_contactBox h3 br {
+  display: block;
+}
+
+.c-contact_contactBox_inner {
+  padding: 30px 15px;
+}
+
+.c-contact_contactBox_inner:after {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  bottom: 18px;
+  background: rgba(255,255,255, .8);
+  width: 1px;
+}
+
+.c-contact_contactBox_list {
+  overflow: hidden;
+}
+
+.c-contact_contactBox_item {
+  width: 50%;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+
+.c-contact_contactBox_item-tel {
+  text-align: left;
+}
+
+.c-contact_contactBox_item-tel img {
+  width: calc(100% - 20px);
+}
+
+.c-contact_contactBox_item-tel p {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.c-contact_contactBox_item-mail {
+  text-align: right;
+}
+
+.c-contact_contactBox_item_btn {
+  width: calc(100% - 20px);
+  padding: 8px 8px 10px 40px;
+  background: #ff9606 url(../img/mail_icon.png) no-repeat 10px 15px;
+  background-size: 20px 15px;
+  font-size: 10px;
+  height: auto;
+}
+
+.c-contact_contactBox_notice {
+  font-size: 10px;
+  padding: 0 15px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* contact component inside */
+
+.c-contact_step {
+  padding: 20px;
+  width: 100%;
+}
+
+
+.c-contact_step:after {
+  display: none;
+}
+
+.c-contact_step_item {
+  width: 100%;
+  float: none;
+}
+
+.c-contact_step_item_tel {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/*
 Top
-********************/
+------------------------------------------------------------*/
 
-/******** hero image *******/
+/* hero image */
 
 .heroImage {
   height: 210px;
@@ -263,8 +356,7 @@ Top
   display: block;
 }
 
-
-/******** appeal msg *******/
+/* appeal msg */
 
 .appeal_msg {
   height: 150px;
@@ -291,42 +383,17 @@ Top
 
 }
 
+/* features */
 
-/******** features *******/
-
-.features {
-  height: auto;
-}
-
-.features_left,
-.features_right {
-  width: 100%;
-  height: 100%;
-}
-
-.features_left {
-  float: none;
-}
-
-.features_right {
-  float: none;
-}
-
-.features_tagline {
-  height: 100px;
-}
-
-.features_tagline-left h3,
-.features_tagline-right h3 {
-  padding: 25px 20px;
+.features_tagline-left .c-halfLayout_left_tagline {
   font-size: 16px;
-  position: static;
   width: 100%;
 }
 
-.features_sentece-left p,
-.features_sentece-right p {
+.features_tagline-right .c-halfLayout_right_tagline {
   width: 100%;
+  left: auto;
+  right: 20px;
 }
 
 .features_sentece-right p {
@@ -335,12 +402,9 @@ Top
 
 .features_sentece-left p {
   padding: 20px;
-  position: absolute;
-  right: 0;
 }
 
-
-/******** appeal_msg_lower *******/
+/* appeal_msg_lower */
 
 .appeal_msg_lower {
   height: 250px;
@@ -392,7 +456,8 @@ Top
   width: 100%;
 }
 
-/******** news *******/
+/* news */
+
 .news {
   height: auto;
 }
@@ -454,112 +519,7 @@ Top
   background: url(../img/link_trianlgle_colored.png) no-repeat left;
 }
 
-/******** contact component *******/
-
-.c-contact {
-  padding: 40px 0;
-  width: 100%;
-}
-
-.c-contact_contactBox {
-  padding: 20px 0 20px;
-  color: #fff;
-}
-
-.c-contact_contactBox h3 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  line-height: 1.4em;
-}
-
-.c-contact_contactBox h3 br {
-  display: block;
-}
-
-.c-contact_contactBox_inner {
-  padding: 30px 15px;
-}
-
-
-.c-contact_contactBox_inner:after {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  left: 50%;
-  bottom: 18px;
-  background: rgba(255,255,255, .8);
-  width: 1px;
-}
-
-.c-contact_contactBox_list {
-  overflow: hidden;
-}
-
-.c-contact_contactBox_item {
-  width: 50%;
-  text-align: center;
-  float: left;
-  position: relative;
-}
-
-.c-contact_contactBox_item-tel {
-  text-align: left;
-}
-
-.c-contact_contactBox_item-tel img {
-  width: calc(100% - 20px);
-}
-
-.c-contact_contactBox_item-tel p {
-  font-size: 12px;
-  letter-spacing: 0;
-}
-
-.c-contact_contactBox_item-mail {
-  text-align: right;
-}
-
-.c-contact_contactBox_item_btn {
-  width: calc(100% - 20px);
-  padding: 8px 8px 10px 40px;
-  background: #ff9606 url(../img/mail_icon.png) no-repeat 10px 15px;
-  background-size: 20px 15px;
-  font-size: 10px;
-  height: auto;
-}
-
-.c-contact_contactBox_notice {
-  font-size: 10px;
-  padding: 0 15px;
-  line-height: 1.4;
-  margin: 0;
-}
-
-
-/******** contact component inside *******/
-
-.c-contact_step {
-  padding: 20px;
-  width: 100%;
-}
-
-
-.c-contact_step:after {
-  display: none;
-}
-
-.c-contact_step_item {
-  width: 100%;
-  float: none;
-}
-
-.c-contact_step_item_tel {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-/* top access */
+/* access */
 
 .topAccess {
   width: 100%;
@@ -604,9 +564,9 @@ Top
 }
 
 
-/*******************
+/*
 Contact
-********************/
+------------------------------------------------------------*/
 
 .contact_info {
   padding: 0;
@@ -686,7 +646,6 @@ Contact
   font-size: 18px;
 }
 
-
 /*
 second opinion
 ------------------------------------------------------------*/
@@ -731,7 +690,6 @@ second opinion
   background: #00224c;
   border: 4px solid #fff;
 }
-
 
 /*
 questions
@@ -888,7 +846,6 @@ company profile
   transform: translate(-50%, -50%);
 }
 
-
 /*
 antemortem measure
 ------------------------------------------------------------*/
@@ -1004,7 +961,6 @@ antemortem measure
   line-height: 2;
 }
 
-
 /*
 inheritance tax return
 ------------------------------------------------------------*/
@@ -1078,11 +1034,4 @@ price list
 }
 
 
-
-
 } /* responsive */
-
-
-
-
-
