@@ -26,18 +26,9 @@ body {
 
 a {
   outline: none;
-  transition: .15s;
+  transition: .3s;
   text-decoration: none;
-}
-
-a:hover {
-  opacity: .6;
-}
-
-.cf:after {
-  content: "";
-  display: block;
-  clear: both;
+  color: #283250;
 }
 
 .wrapper {
@@ -90,7 +81,7 @@ header
   background: #0c2d66;
   height: 120px;
   padding: 28px 40px;
-  min-width: 1020px;
+  min-width: 1200px;
 }
 
 .header_logo {
@@ -150,7 +141,7 @@ header
 .header_right_account {
   float: left;
   padding: 5px 0;
-  margin-left: 40px;
+  margin: 0 50px 0 40px;
 }
 
 .header_right_account li {
@@ -201,6 +192,7 @@ contents
   color: #fff;
   font-size: 24px;
   padding-top: 80px;
+  background-size: 60px 60px;
 }
 
 .top_menu_item-ocupant {
@@ -236,7 +228,8 @@ contents
   text-align: center;
   height: 80px;
   line-height: 80px;
-  color: #666;
+  color: #283250;
+  font-size: 15px;
 }
 
 .top_menu_item-chintaicho {
@@ -319,12 +312,16 @@ sidemenu
   background: rgba(255,255,255,.3);
 }
 
-.sideMenu_search input[type="image"] {
+.sideMenu_search_submit {
+  background: url(../img/sidebar/search.svg) no-repeat;
+  border: none;
   position: absolute;
-  width: 20px;
+  right: 5px;
+  top: 9px;
+  padding-top: 20px;
   height: 20px;
-  right: 15px;
-  top: 10px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .sideMenu_list {
@@ -378,21 +375,41 @@ manual top
 ----------------------------------------------*/
 
 .searchArea {
-  padding: 40px;
-  background: #ccc;
-  text-align: center;
+  padding: 50px;
+  height: 140px;
+  background: url(../img/search_bg.svg) no-repeat;
+  width: 1086px;
 }
 
-.searchArea input {
+.searchArea form {
+  position: relative;
   width: 520px;
+  margin: 0 auto;
+  display: block;
+}
+
+.searchArea input[type="text"] {
   font-size: 16px;
-  padding: 15px 20px;
+  padding: 15px 50px 15px 20px;
   box-shadow: 0 0 5px #999;
+  width: 100%;
+}
+
+.searchArea_submit {
+  background: url(../img/search_icon.svg) no-repeat;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  border: 0;
+  overflow: hidden;
+  height: 30px;
+  padding-top: 30px;
 }
 
 
 .manualTop_wrap {
   padding: 80px;
+  width: 1086px;
 }
 
 .manualTop_wrap h2 {
@@ -405,33 +422,144 @@ manual top
 /* カテゴリーから探す */
 
 .categorySearch_list {
-  margin: 0 -30px 40px;
+  margin: 0 -15px 40px;
   overflow: hidden;
 }
 
 .categorySearch_item {
   float: left;
-  width: calc(33.33% - 30px);
+  width: 282px;
+  height: 80px;
   margin: 0 15px 30px 15px;
+  background: #fff;
 }
 
 .categorySearch_item a {
-  background: #fff;
   display: block;
   height: 80px;
-  padding: 35px 20px 30px 70px;
-  font-weight: bold;
+  padding: 35px 20px 30px 90px;
+  color: #283250;
+  background-size: 50px 50px;
+  background-position: 17px 50%;
+  background-repeat: no-repeat;
 }
+
+.categorySearch_item a:hover {
+  color: #a97322;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  background-size: 50px 50px;
+  background-position: 17px 50%;
+  background-repeat: no-repeat;
+}
+
+.categorySearch_item-aircon {
+  background: url(../img/category/aircon.svg);
+}
+
+.categorySearch_item-aircon:hover {
+  background: url(../img/category/aircon_hover.svg);
+}
+
+.categorySearch_item-light {
+  background: url(../img/category/light.svg);
+}
+
+.categorySearch_item-light:hover {
+  background: url(../img/category/light_hover.svg);
+}
+
+.categorySearch_item-tv {
+  background: url(../img/category/tv.svg);
+}
+
+.categorySearch_item-tv:hover {
+  background: url(../img/category/tv_hover.svg);
+}
+
+.categorySearch_item-bath {
+  background: url(../img/category/bath.svg);
+}
+
+.categorySearch_item-bath:hover {
+  background: url(../img/category/bath_hover.svg);
+}
+
+.categorySearch_item-toilet {
+  background: url(../img/category/toilet.svg);
+}
+
+.categorySearch_item-toilet:hover {
+  background: url(../img/category/toilet_hover.svg);
+}
+
+.categorySearch_item-kitchen {
+  background: url(../img/category/kitchen.svg);
+}
+
+.categorySearch_item-kitchen:hover {
+  background: url(../img/category/kitchen_hover.svg);
+}
+
+.categorySearch_item-gas {
+  background: url(../img/category/gas.svg);
+}
+
+.categorySearch_item-gas:hover {
+  background: url(../img/category/gas_hover.svg);
+}
+
+.categorySearch_item-waterheater {
+  background: url(../img/category/waterheater.svg);
+}
+
+.categorySearch_item-waterheater:hover {
+  background: url(../img/category/waterheater_hover.svg);
+}
+
+.categorySearch_item-door {
+  background: url(../img/category/door.svg);
+}
+
+.categorySearch_item-door:hover {
+  background: url(../img/category/door_hover.svg);
+}
+
+.categorySearch_item-key {
+  background: url(../img/category/key.svg);
+}
+
+.categorySearch_item-key:hover {
+  background: url(../img/category/key_hover.svg);
+}
+
+.categorySearch_item-moral {
+  background: url(../img/category/moral.svg);
+}
+
+.categorySearch_item-moral:hover {
+  background: url(../img/category/moral_hover.svg);
+}
+
+.categorySearch_item-other {
+  background: url(../img/category/other.svg);
+}
+
+.categorySearch_item-other:hover {
+  background: url(../img/category/other_hover.svg);
+}
+
+
 
 /* よくある質問 */
 .faq_list {
-  margin: 0 -30px 40px;
+  margin: 0 -15px 40px;
 }
 
 .faq_item {
   float: left;
   width: calc(50% - 30px);
   margin: 0 15px 30px 15px;
+  overflow: hidden;
 }
 
 .faq_item a {
@@ -439,7 +567,15 @@ manual top
   display: block;
   height: 60px;
   padding: 25px;
-  font-weight: bold;
+  color: #283250;
+}
+
+.faq_item p {
+  float: left;
+}
+
+.faq_item span {
+  float: right;
 }
 
 
@@ -462,12 +598,13 @@ manual detail
 .manualDetail_wrap {
   padding: 50px;
   overflow: hidden;
+  width: 1086px;
 }
 
 
 .manualDetail_main {
   float: right;
-  width: 640px;
+  width: 700px;
 }
 
 .manualDetail_point {
@@ -496,12 +633,13 @@ manual detail
   padding: 16px 20px;
   color: #ab7219;
   letter-spacing: .2em;
-  font-size: 16px;
+  font-size: 18px;
   border-bottom: 2px solid #e8ebf3;
 }
 
 .manualDetail_point_content {
   padding: 20px 30px;
+  font-size: 15px;
 }
 
 .manualDetail_point_content ol li {
@@ -516,25 +654,63 @@ manual detail
   font-size: 20px;
 }
 
-.manualDetail_point_content ul {
+.manualDetail_point_list {
   margin-bottom: 10px;
 }
 
-.manualDetail_point_content ul li {
-  padding-left: 15px;
+.manualDetail_point_item {
+  padding-left: 18px;
   position: relative;
   margin-bottom: 15px;
 }
 
-.manualDetail_point_content ul li:before {
+.manualDetail_point_item:before {
   content: '';
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 4px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #ab7219;
+}
+
+.manualDetail_point-problem {
+  margin-bottom: 10px;
+}
+
+.manualDetail_point-problem li {
+  display: inline-block;
+  margin: 0 20px 15px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.radioBtn {
+  display: none;
+}
+
+.radioBtn + .radioIcon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #a97322;
+  cursor: pointer;
+}
+
+.radioBtn:checked + .radioIcon:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a97322;
 }
 
 .manualDetail_point_emphasis {
