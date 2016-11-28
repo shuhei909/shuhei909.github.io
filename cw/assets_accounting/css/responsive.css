@@ -59,6 +59,8 @@ Layouts
 .header_upper {
   height: 64px;
   padding: 12px 0 8px;
+  position: relative;
+  z-index: 2;
 }
 
 .header_upper_right {
