@@ -80,8 +80,13 @@ header
 .header {
   background: #0c2d66;
   height: 120px;
-  padding: 28px 40px;
-  min-width: 1200px;
+  padding: 28px 0;
+}
+
+.header_wrapper {
+  width: 1366px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .header_logo {
