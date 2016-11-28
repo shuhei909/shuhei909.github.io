@@ -37,13 +37,28 @@ Layouts
 
 /* Header */
 
+.header {
+  z-index: 999;
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header.fixed + section {
+  margin-top: 70px;
+}
+
 .header_upper_logo img {
   width: 200px;
 }
 
 .header_upper {
   height: 64px;
-  padding: 10px 0;
+  padding: 12px 0 8px;
 }
 
 .header_upper_right {
@@ -56,13 +71,116 @@ Layouts
   float: right;
 }
 
-.header_upper_right-sp img {
-  width: 30px;
-  height: 23px;
+/* responsive用 toggle */
+
+.spNav_toggle {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 34px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 101;
 }
 
+.spNav_toggle_wrap {
+  position: relative;
+}
+
+.spNav_toggle_wrap span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #05234c;
+  left: 0;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+
+.spNav_toggle_wrap span:nth-child(1) {
+  top: 0;
+}
+.spNav_toggle_wrap span:nth-child(2) {
+  top: 11px;
+}
+.spNav_toggle_wrap span:nth-child(3) {
+  top: 22px;
+}
+
+ /* spNav_toggle_wrap open時 切り替えアニメーション */
+.open .spNav_toggle_wrap span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+.open .spNav_toggle_wrap span:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+
+.open .spNav_toggle_wrap span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-315deg);
+  -moz-transform: rotate(-315deg);
+  transform: rotate(-315deg);
+}
+
+/* responsive用 menu */
 .header_lower {
+  height: auto;
+  position: absolute;
+  /* 開いてないときは画面外に配置 */
+  top: -500px;
+  background: #333;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  z-index: 1;
+}
+
+.gNav:after {
   display: none;
+}
+
+.gNav_item {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #555;
+}
+
+.gNav_item:last-child {
+  border-bottom: 0;
+}
+
+.gNav_item:after {
+  display: none;
+}
+
+.gNav_item a {
+  padding: 15px 10px;
+  height: auto;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.gNav_item a span {
+  display: inline;
+  margin-left: 10px;
+}
+
+.header.open .header_lower {
+  /* #global-nav top + #mobile-head height */
+  -moz-transform: translateY(565px);
+  -webkit-transform: translateY(565px);
+  transform: translateY(565px);
 }
 
 /* Footer */

@@ -50,6 +50,11 @@ Layouts
 
 /* Header */
 
+.header {
+  background: #fff;
+  width: 100%;
+}
+
 .header_upper_logo {
   float: left;
 }
@@ -57,15 +62,16 @@ Layouts
 .header_upper {
   height: 105px;
   padding: 20px 0;
+  background: #fff;
 }
 
 .header_upper_right {
   float: right;
 }
 
-
-.header_upper_right-sp {
-  display: none; /* sp用 */
+.spNav_toggle {
+  /* sp用 */
+  display: none;
 }
 
 .header_upper_right li {

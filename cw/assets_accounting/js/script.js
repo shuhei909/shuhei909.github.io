@@ -1,7 +1,7 @@
 
 (function($) {
   $(function() {
-    var $header = $('#top-head');
+    var $header = $('.header');
     // Nav Fixed
     $(window).scroll(function() {
       if ($(window).scrollTop() > 350) {
@@ -11,7 +11,7 @@
       }
     });
     // Nav Toggle Button
-    $('#nav-toggle').click(function(){
+    $('.js_nav_toggle').click(function(){
       $header.toggleClass('open');
     });
   });
