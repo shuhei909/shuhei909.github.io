@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Common
+---------------------------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "sans-serif";
+  font-size: 14px;
+  color: #283250;
+  background: #fff;
+}
+
+a {
+  outline: none;
+  transition: .3s;
+  text-decoration: none;
+  color: #283250;
+}
+
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contact_mail_btn {
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 10px 10px 60px;
+  background: #ff9606 url(../img/mail_icon.png) no-repeat 15px 17px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 60px;
+}
+
+.contact_mail_btn span {
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+.form-basic {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-appearance:none;
+  box-sizing: border-box;
+  transition: 0.15s;
+  padding: 8px 10px;
+  border: 0;
+  font-size: 14px;
+}
+
+
+
+
+
+/*
+Container
+---------------------------------------------------------*/
+
+
+.bg_container {
+  background: url(../img/bg_right.png) no-repeat right center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -300px;
+  z-index: -1;
+}
+
+.bg_container_left {
+  content: '';
+  background: url(../img/bg_left.png) no-repeat left top;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  margin-left: -550px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1900px) {
+.bg_container_left {
+  position: fixed;
+  left: 0;
+  margin-left: 0;
+}
+}
+
+.container {
+  width: 1000px;
+  padding: 100px 135px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/*
+Side Menu
+---------------------------------------------------------*/
+
+.sideMenu {
+  width: 230px;
+  margin-right: 135px;
+  float: left;
+}
+
+.sideMenu_title {
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.sideMenu_title:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  background: #ccc;
+}
+
+.sideMenu_list {
+  margin-bottom: 30px;
+}
+
+.sideMenu_item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sideMenu_item a {
+  display: block;
+  padding: 15px;
+}
+
+
+/*
+Main Content
+---------------------------------------------------------*/
+
+.mainContent {
+  width: 365px;
+  float: left;
+}
+
+.top_title {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 3px dotted #ccc;
+}
+
+.latestInfo_list {
+
+}
+
+.latestInfo li {
+  margin-bottom: 20px;
+}
