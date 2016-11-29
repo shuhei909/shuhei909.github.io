@@ -1,5 +1,5 @@
 
-(function($) {
+$(function() {
   $(function() {
     var $header = $('.header');
     // Nav Fixed
@@ -15,4 +15,4 @@
       $header.toggleClass('open');
     });
   });
-})(jQuery);
+});
