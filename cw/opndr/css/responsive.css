@@ -29,11 +29,28 @@
 Side Menu
 ---------------------------------------------------------*/
 
+.sideMenu_logo {
+  display: block;
+  margin: 20px 0 50px;
+}
+
+.sideMenu_logo img {
+  width: 100%;
+}
+
+.sideMenu_logo p {
+  font-size: 11px;
+  text-align: center;
+}
 
 .sideMenu {
   width: 100%;
   margin-right: 0;
   float: none;
+}
+
+.sideMenu_content {
+  padding: 0 10px;
 }
 
 
@@ -45,6 +62,34 @@ Main Content
 .mainContent {
   width: 100%;
   float: none;
+}
+
+.top_logo {
+  display: none;
+}
+
+.top_officialName {
+  display: none;
+}
+
+
+.top_bottom {
+  display: none;
+}
+
+.top_bottom-sp {
+  display: block;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.top_bottom-sp img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.top_bottom-sp_copy {
+  margin-bottom: 20px;
 }
 
 
