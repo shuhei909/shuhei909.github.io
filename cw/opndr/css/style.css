@@ -102,13 +102,6 @@ Container
   z-index: -1;
 }
 
-@media screen and (min-width: 1900px) {
-  .bg_container_left {
-    position: fixed;
-    left: 0;
-    margin-left: 0;
-  }
-}
 
 .container {
   width: 1000px;
