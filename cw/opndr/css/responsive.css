@@ -6,7 +6,23 @@
 
 .container {
   width: 100%;
-  padding: 0 10px;
+  padding: 40px 20px;
+}
+
+
+.bg_container {
+  background-size: cover;
+  width: 200%;
+  position: fixed;
+  bottom: 0;
+  right: -350px;
+}
+
+.bg_container_left {
+  position: fixed;
+  left: 0;
+  margin-left: -50px;
+  background-size: 400px 250px;
 }
 
 /*
