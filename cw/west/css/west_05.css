@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+.page-west_05 .page-hero {
+    background-image: url(../img/west_05/hero.jpg);
+}
+
+.shop-section__title {
+    margin: 40px 0 20px;
+    padding-left: 0.5em;
+    font-size: 26px;
+    line-height: 1.1;
+    color: #414DAB;
+    border-left: 10px solid #414DAB;
+}
+
+/* Footer */
+.shop__footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.shop-back-btn {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 470px;
+    padding: 15px 30px;
+    color: #414349;
+    background: #FFF;
+    border: 2px solid #414349;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.shop-back-btn:after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: block;
+    height: 40px;
+    margin-top: -19px;
+    font-size: 28px;
+    content: "\f105";
+    font-family: FontAwesome;
+}
+
+
+/*--------------------------------------------------------------
+# Shop News
+--------------------------------------------------------------*/
+.shop-news-article {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.shop-news-article__footer {
+    text-align: right;
+}
+
+.shop-news-article__more-link {
+    color: #414DAB;
+    font-weight: bold;
+    padding-left: 21px;
+    background: url(../img/common/link-arrow-01.png) left center no-repeat;
+    background-size: 16px;
+}
+
+
+/*--------------------------------------------------------------
+# Shop New Arrival
+--------------------------------------------------------------*/
+.shop-arrival-section__list {
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.shop-arrival-section__item {
+    float: left;
+    width: 25%;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.shop-arrival-item__image {
+    margin-bottom: 6px;
+    border: 5px solid #EFEFEF;
+}
+
+.shop-arrival-item__image img {
+    width: 100%;
+}
+
+.shop-arrival-item__brand {
+    display: block;
+}
+
+.shop-arrival-item__name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.shop-arrival-item__price {
+    display: block;
+    font-size: 18px;
+}
+
+.shop-arrival-item__date {
+    display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Shop Message
+--------------------------------------------------------------*/
+.shop-message-section {
+    border-top: 1px solid #EFEFEF;
+}
+
+.shop-message-section .shop-message {
+    padding: 0 6%;
+    overflow: hidden;
+}
+
+.shop-message-section .shop-message__image {
+    float: left;
+    width: 230px;
+}
+
+.shop-message-section .shop-message__content {
+    margin-left: 256px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.shop-message-section .shop-message__content > *:first-child {
+    margin-top: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Shop INfo
+--------------------------------------------------------------*/
+.shop-info-section__body {
+    overflow: hidden;
+}
+
+.shop-info-section__service {
+    float: left;
+    width: 180px;
+}
+
+.shop-info-section__detail {
+    margin-left: 200px;
+}
+
+.shop-info-section__table {
+    width: 100%;
+}
+
+.shop-info-section__table th,
+.shop-info-section__table td {
+    padding: 16px 0 16px 32px;
+    background: #EDEDED;
+    border-bottom: 3px solid #FFF;
+    font-size: 16px;
+}
+
+.shop-info-section__table th {
+    color: #FFF;
+    background: #414DAB;
+    font-weight: normal;
+    text-align: left;
+}
+
+.shop-info-section__service .shop-info-section__table th {
+    font-size: 18px;
+}
+.shop-info-section__service .shop-info-section__table th,
+.shop-info-section__service .shop-info-section__table td {
+    padding-left: 0;
+    text-align: center;
+}
+
+.shop-info-section__map {
+    clear: left;
+    margin-top: 30px;
+}

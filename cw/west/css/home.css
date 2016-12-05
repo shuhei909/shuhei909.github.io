@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Home Hero
+--------------------------------------------------------------*/
+.home-hero {
+	position: relative;
+}
+
+.home-hero img {
+	width: 100%;
+	height: auto;
+}
+
+.home-slider .owl-prev,
+.home-slider .owl-next {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	margin-top: -30px;
+	font-size: 60px;
+	color: #FFF;
+	-moz-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+	-webkit-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+	-ms-text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-slider .owl-prev {
+	left: 1.2%;
+}
+
+.home-slider .owl-next {
+	right: 1.2%;
+}
+
+
+/*--------------------------------------------------------------
+## Home Recent
+--------------------------------------------------------------*/
+.home-recent {
+	margin: 30px 0 0;
+}
+
+.home-recent-title {
+	margin: 0 auto 30px;
+	max-width: 346px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	color: #FF0000;
+	text-align: center;
+	border-bottom: 2px solid #CFCFCF;
+}
+
+.home-recent-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #AAA;
+}
+
+.home-recent-list:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 4px;
+	background: #FFF;
+}
+
+.home-recent-item {
+	margin: 10px 0;
+}
+
+.home-recent-list .owl-item:first-child .home-recent-item {
+	border-left: none;
+}
+
+.home-recent-list .owl-prev {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: -16px;
+	z-index: 10;
+	margin-top: -16px;
+	width: 32px;
+	height: 32px;
+	background: url(../img/home/recent/prev.png) center center no-repeat;
+}
+
+.home-recent-list .owl-next {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: -16px;
+	z-index: 10;
+	margin-top: -16px;
+	width: 32px;
+	height: 32px;
+	background: url(../img/home/recent/next.png) center center no-repeat;
+}
+
+.home-recent-product {
+	border-right: 1px solid #AAA;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.home-recent-product__image {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.home-recent-product__name {
+	margin: 6px 0;
+}
+
+.home-recent-product__date {
+	margin: 6px 0;
+	font-size: 12px;
+}
+
+.home-recent-product__price {
+	margin: 6px 0;
+}
+
+.home-recent-product__comment {
+	margin: 6px 0;
+}
+
+.home-recent-more {
+	margin: 8px 0;
+	text-align: right;
+}
+
+.home-recent-more a {
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	padding-right: 16px;
+	background: url(../img/home/recent/more-icon.png) right 2px no-repeat;
+}
+
+
+/*--------------------------------------------------------------
+## Home Category
+--------------------------------------------------------------*/
+.home-category {
+	margin: 20px 0 0;
+}
+
+.home-category-title {
+	margin: 0 auto 15px;
+	max-width: 346px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	color: #FF0000;
+	text-align: center;
+	border-bottom: 2px solid #CFCFCF;
+}
+
+.home-category-list {
+	overflow: hidden;
+	list-style: none;
+	margin: 0 -7px;
+	padding: 0;
+}
+
+.home-category-item {
+	float: left;
+	width: 33.3333%;
+	margin: 15px 0;
+	padding: 0 7px;
+}
+
+.home-category-item a {
+	display: block;
+	position: relative;
+}
+
+.home-category-item__image {
+	display: block;
+}
+
+.home-category-item__image img {
+	width: 100%;
+	height: auto;
+}
+
+.home-category-item__name {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 9px 10px 8px 30px;
+	font-size: 14px;
+	color: #FFF;
+	background: rgba(0, 0, 0, 0.7) url(../img/home/category/more-icon.png) 7px center no-repeat;
+	background-size: 18px 17px;
+}
+
+.home-category-message {
+	margin: 20px 0 50px;
+	text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+## Home Check
+--------------------------------------------------------------*/
+.home-check {
+	margin: 30px 0 0;
+	padding: 30px;
+	background: #414EAB;
+}
+
+.home-check-title {
+	margin: 0 auto 30px;
+	max-width: 346px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+	border-bottom: 2px solid #CFCFCF;
+}
+
+.home-check-list {
+	list-style: none;
+	margin: 0 -20px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.home-check-item {
+	float: left;
+	width: 33.33333%;
+	padding: 0 20px;
+}
+
+.home-check-item img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*--------------------------------------------------------------
+## Home Service
+--------------------------------------------------------------*/
+.home-service {
+	margin: 30px 0 0;
+}
+
+.home-service-title {
+	margin: 0 auto 18px;
+	max-width: 346px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	color: #FF0000;
+	text-align: center;
+	border-bottom: 2px solid #CFCFCF;
+}
+
+.home-service-description {
+	text-align: center;
+	margin: 18px 10px 40px;
+}
+
+.home-service-list {
+	list-style: none;
+	margin: 0 -15px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.home-service-item {
+	float: left;
+	width: 33.33333%;
+	padding: 0 15px;
+}
+
+.home-service-item img {
+	width: 100%;
+	height: auto;
+}
+
+.home-service-item .button {
+	margin-top: 10px;
+	font-size: 17px;
+}
+
+
+/*--------------------------------------------------------------
+## Home Stores
+--------------------------------------------------------------*/
+.home-stores {
+	margin: 60px 0 0;
+	padding: 30px 0;
+	background: #EEEEEE;
+}
+
+.home-stores .container {
+	max-width: 1080px;
+}
+
+.home-stores-header {
+	text-align: center;
+}
+
+.home-stores-title {
+	margin: 0 auto 18px;
+	max-width: 346px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	color: #FF0000;
+	text-align: center;
+	border-bottom: 2px solid #CFCFCF;
+}
+
+.home-stores-description {
+	text-align: center;
+	margin: 18px 0 14px;
+}
+
+.home-stores-time {
+	text-align: center;
+	margin: 14px 0 40px;
+	font-size: 18px;
+}
+
+.home-stores-time small {
+	font-size: 14px;
+}
+
+.home-stores-content {
+	border: 1px solid #787878;
+	padding: 20px 10px 20px 20px;
+}
+
+.home-stores-list {
+	list-style: none;
+	margin: 0;
+	padding: 0 20px 0 0;
+	height: 530px;
+	overflow-y: auto;
+}
+
+.home-stores-item {
+	margin-bottom: 30px;
+}
+
+.home-stores-item:last-child {
+	margin-bottom: 0;
+}
+
+.home-store {
+	overflow: hidden;
+	margin: 0 -12px;
+}
+
+.home-store-image {
+	float: left;
+	width: 30%;
+	padding: 0 12px;
+}
+
+.home-store-staff {
+	float: left;
+	width: 18%;
+	padding: 0 12px;
+}
+
+.home-store-info {
+	float: left;
+	width: 52%;
+	padding: 0 12px;
+}
+
+.home-stores img {
+	width: 100%;
+	height: auto;
+}
+
+.home-store-image {
+	line-height: 0;
+}
+
+.home-store-image img {
+	border: 2px solid #787878;
+}
+
+.home-store-staff__iamge {
+	line-height: 0;
+}
+
+.home-store-staff__name {
+	margin: 8px 0 0 0;
+}
+
+.home-store-info__name {
+	margin: 0 0 16px 0;
+	padding: 0 0 6px 0;
+	border-bottom: 1px solid #FF0000;
+	font-size: 20px;
+}
+
+.home-store-info__address {
+	margin: 12px 0 8px;
+}
+
+.home-store-info__detail {
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0
+}
+.home-store-info__detail dt {
+	float: left;
+	width: 5em;
+	margin: 0;
+	padding: 2px 0;
+}
+.home-store-info__detail dd {
+	margin-left: 5em;
+	margin: 0;
+	padding: 2px 0;
+}
+
+.home-store-info__comment {
+	margin: 12px 0 3px 0;
+	border-top: 1px solid #CFCFCF;
+	padding-top: 8px;
+}
+
+
+/*--------------------------------------------------------------
+## Home Contact
+--------------------------------------------------------------*/
+.home-contact {
+	margin: 40px 0;
+}
+
+.home-contact .container {
+	max-width: 800px;
+}
+
+.home-contact-methods {
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.home-contact-tel,
+.home-contact-email {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.home-contact-tel__box {
+	max-width: 346px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.home-contact-tel__free {
+	margin: 0 0 5px;
+	color: #FF0000;
+	font-size: 16px;
+}
+.home-contact-tel__title {
+	margin: 0 auto 10px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 2px solid #CFCFCF;
+	letter-spacing: 1px;
+}
+
+.home-contact-tel__number {
+	margin: 14px 0 5px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #FF0000;
+	letter-spacing: 1px;
+}
+
+.home-contact-tel__time {
+	margin: 0;
+}
+
+.home-contact-email {
+	text-align: center;
+}

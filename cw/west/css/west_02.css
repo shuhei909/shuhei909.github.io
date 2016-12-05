@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.page-west_02 .page-hero {
+    background-image: url(../img/west_02/hero.jpg);
+}
+
+.purchase-record-section__header {
+    text-align: right;
+}
+
+.purchase-record-section__filter select {
+    height: 32px;
+    padding: 0 5px;
+    border: 1px solid #D3D3D3;
+    background: #EDEDED;
+    color: #414349;
+}
+
+.purchase-record-section__list {
+    margin: 20px -10px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.purchase-record-section__item {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.purchase-record-item {
+    position: relative;
+    font-size: 12px;
+}
+
+.purchase-record-item a {
+    color: #414DAB;
+    text-decoration: underline;
+}
+
+.purchase-record-item a:hover {
+    opacity: 0.8;
+}
+
+.purchase-record-item__image {
+    position: relative;
+    line-height: 0;
+}
+
+.purchase-record-item__image img {
+    width: 100%;
+}
+
+.purchase-record-item__category {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 0 5px;
+    text-align: center;
+    color: #FFF;
+    background: #515151;
+    border-radius: 3px;
+}
+
+.purchase-record-item__brand {
+    display: block;
+    margin: 8px 0 0 0;
+}
+
+.purchase-record-item__name {
+    display: block;
+    margin: 4px 0;
+    font-size: 15px;
+}
+
+.purchase-record-item__shop {
+    display: inline-block;
+}
+
+.purchase-record-item__date {
+    display: inline-block;
+    padding-left: 1em;
+}
