@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
+.purchase_product__container {
+  position: relative;
+}
+
+/* サイドメニュー */
 .content-sidemenu {
   width: 190px;
-  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #eee;
 }
 
 .content-sidemenu__title {
@@ -13,6 +22,15 @@
   font-size: 22px;
   font-weight: normal;
   line-height: 88px;
+}
+
+.content-sidemenu--active {
+  background: #fff;
+}
+
+.content-sidemenu--active__title {
+  margin: 0;
+  padding: 15px 0 10px 20px;
 }
 
 .content-sidemenu__list {
@@ -31,25 +49,103 @@
   background: #414349;
   padding: 0 14px 0 28px;
   line-height: 53px;
+  position: relative;
 }
 
+.content-sidemenu__item a:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sidemenu--active__list {
+  margin: 0;
+  padding: 0 0 20px;
+}
+
+.sidemenu--active__item {
+  list-style: none;
+}
+
+.sidemenu--active__item a {
+  padding: 7px 0 6px 40px;
+  display: block;
+  position: relative;
+}
+
+.sidemenu--active__item a:before {
+  position: absolute;
+  left: 22px;
+  content: '';
+  width: 7px;
+  height: 7px;
+  margin-top: 5px;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sidemenu--active__item.active a {
+  background: #414eab;
+  color: #fff;
+}
+
+.sidemenu--active__item.active a:before {
+  border-color: #fff;
+}
+
+
+/* 主な買い取り対象メイン */
 .content-main_col {
   margin-left: 220px;
 }
 
-
 .purchase_product__intro {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
 
+.purchase_product__intro__text {
+  width: 440px;
+  float: left;
+}
+
+.purchase_product__intro__text p {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .purchase_product__intro__title {
+  font-size: 31px;
+  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+}
 
+.purchase_product__intro__img {
+  float: left;
+  text-align: center;
+  width: 340px;
 }
 
 .purchase-item_container {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid #eee;
+}
+
+.purchase-item_container:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .purchase-item_container__title {
@@ -62,6 +158,7 @@
 }
 
 
+/* こんな商品を買取しています。 */
 .purchase-list {
   margin: 0 -10px;
   overflow: hidden;
@@ -90,10 +187,20 @@
   float: left;
 }
 
-.purchase-list__item p {
-  float: left;
+.purchase-list__item--brand,
+.purchase-list__item--product {
+  font-size: 16px;
+  margin: 0 0 5px;
 }
 
+.purchase-list__item--num,
+.purchase-list__item--spec {
+  margin: 0 0 5px;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+/* 主な種類 */
 .product_type__list {
   overflow: hidden;
   margin: 0 -5px;
@@ -102,7 +209,7 @@
 
 .product_type__item {
   width: calc(20% - 10px);
-  margin: 0 5px 10px;
+  margin: 0 5px 20px;
   list-style: none;
   float: left;
 }
@@ -110,26 +217,66 @@
 .product_type__item-img {
   background: #eee;
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 .product_type__item img {
   width: 100%;
   height: 100%;
+  min-height: 100px;
 }
 
-.sell_points {
-
+.product_type__item p {
+  margin: 0;
 }
 
+/* 主なブランド */
+.primary_brand__list {
+  padding: 0;
+  overflow: hidden;
+  margin: 0 -5px;
+}
+
+.primary_brand__item {
+  list-style: none;
+  float: left;
+  width: calc(25% - 10px);
+  margin: 0 5px 10px;
+}
+
+.primary_brand__item img {
+  width: 100%;
+  height: 80px;
+  border: 5px solid #eee;
+}
+
+/* より高く売るポイント */
 .sell_points__title {
   background: #eee;
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
   color: #414eab;
   margin-bottom: 30px;
+  position: relative;
+  font-size: 16px;
+}
+
+.sell_points__title:before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  width: 13px;
+  height: 13px;
+  border: 3px solid #414eab;
+  border-radius: 50%;
+}
+
+.sell_points__content {
+  padding: 0 60px;
 }
 
 .sell_points__list {
-  padding: 0 60px;
+  margin-bottom: 30px;
 }
 
 .sell_points__item {
@@ -158,5 +305,65 @@
 
 .sell_points__item--des {
   font-size: 13px;
+}
+
+.sell_points__not_sell {
+  overflow: hidden;
+}
+
+.sell_points__not_sell__btn {
+  display: block;
+  float: right;
+  border: 3px solid #414349;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  float: right;
+  width: 300px;
+  position: relative;
+  background: url(../img/seikatsukaden/cancel.png) no-repeat 40px center;
+}
+
+.sell_points__not_sell__btn:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 10px;
+  height: 18px;
+  background: url(../img/seikatsukaden/arrow.png) no-repeat 90% center;
+}
+
+/* より高く売るポイント */
+.assessment__inner {
+  padding: 20px 0;
+  background: #414DAB;
+}
+
+.assessment__inner__title {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.assessment__inner__title span {
+  font-size: 19px;
+  display: block;
+}
+
+.assessment__inner__content {
+  padding: 0 3%;
+  overflow: hidden;
+}
+
+.assessment__inner__web,
+.assessment__inner__tel {
+  float: left;
+  width: 50%;
+  padding: 0 1.5%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
