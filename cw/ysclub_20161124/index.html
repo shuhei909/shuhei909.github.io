@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>わいず倶楽部</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/owl.carousel.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <link href="./css/ie8.css" rel="stylesheet">
+  <![endif]-->
+</head>
+<body>
+<a id="top"></a>
+<span id="mobile-detect" class="mobile-only"></span>
+
+<div class="site-wrapper">
+    <header class="site-header">
+        <div class="site-header-top desktop-only">
+            <div class="container">
+                <nav class="site-header-top-nav">
+                    <ul class="site-header-top-nav__list">
+                        <li class="site-header-top-nav__item"><a href=""><i class="fa fa-question-circle"></i> よくある質問</a></li>
+                        <li class="site-header-top-nav__item"><a href=""><i class="fa fa-user"></i> プライバシーポリシー</a></li>
+                        <li class="site-header-top-nav__item"><a href=""><i class="fa fa-sitemap"></i> サイトマップ</a></li>
+                    </ul>
+                    <div class="site-header-top-login">
+                        <a href="" class="hover"><img data-desktop-src="./img/common/header-top-login-btn.png" alt="会員ログイン"></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="site-header-main">
+            <div class="container">
+                <h1 class="site-logo"><a href="./"><img src="./img/common/logo.png" width="258" alt="わいず倶楽部 大人の部活動。読売新聞が応援！"></a></h1>
+                <div class="site-font-changer desktop-only">
+                    <label class="site-font-changer__label">文字サイズ</label>
+                    <div class="site-font-changer__toggle">
+                        <a data-value="10" class="active">標準</a>
+                        <a data-value="12" class="">拡大</a>
+                    </div>
+                </div>
+                <div class="site-header-info desktop-only">
+                    <a href=""><img data-desktop-src="./img/common/header-info.png" width="242" alt="読売新聞大阪本社 わいず倶楽部事務局 06-6366-2338 日祝除く 午前10時から午後5時"></a>
+                </div>
+                <div class="site-header-register desktop-only">
+                    <a href="" class="hover"><img data-desktop-src="./img/common/header-register-btn.png" alt="新規入会申込み"></a>
+                </div>
+                <a href="#menu" class="site-menu-toggle mobile-only"></a>
+            </div>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="site-nav desktop-only">
+            <div class="site-nav__bar">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item home active"><a href="">わいず倶楽部トップ</a></li>
+                    <li class="site-nav__item about"><a href="">わいず倶楽部とは</a></li>
+                    <li class="site-nav__item member"><a href="">お得な会員特典</a></li>
+                    <li class="site-nav__item club"><a href="">これが大人の部活動</a></li>
+                    <li class="site-nav__item contact"><a href="">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile nav -->
+        <nav class="site-mobile-nav mobile-only">
+            <ul class="site-mobile-nav__list">
+                <li class="site-mobile-nav__item top active"><a href="">わいず倶楽部トップ</a></li>
+                <li class="site-mobile-nav__item about"><a href="">わいず倶楽部とは</a></li>
+                <li class="site-mobile-nav__item member"><a href="">お得な会員特典</a></li>
+                <li class="site-mobile-nav__item club"><a href="">これが大人の部活動</a></li>
+                <li class="site-mobile-nav__item register"><a href="">新規ご入会のご案内</a></li>
+                <li class="site-mobile-nav__item contact"><a href="">お問い合わせ</a></li>
+            </ul>
+            <div class="site-mobile-nav__footer">
+                <div class="container">
+                    <div class="site-mobile-nav__btn">
+                        <a href="" class="btn btn-block btn-arrow"><img src="./img/common/nav-info-btn-mobile.png" alt="売新聞大阪本社 わいず倶楽部事務局 06-6366-2338 日祝除く 午前10時から午後5時"></a>
+                    </div>
+                    <div class="site-mobile-nav__btn btn-row">
+                        <a href="" class="btn btn-danger btn-shadow">新規入会申込み</a>
+                        <a href="" class="btn btn-warning btn-shadow">会員ログイン</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header><!--.site-header-->
+
+    <div class="site-body home-page"><!-- ページ固有のクラスを追加 -->
+        <section class="home-hero">
+            <ul class="home-hero-slider">
+                <li><div class="image"></div></li>
+                <li><div class="image"></div></li>
+                <li><div class="image"></div></li>
+                <li><div class="image"></div></li>
+            </ul>
+            <p class="home-hero-message">
+                わいず倶楽部 わいず倶楽部は地域や社会に関わり、生活を充実させる「大人の部活動」を応援します。
+            </p>
+        </section><!--.home-hero-->
+
+        <section class="home-about">
+            <div class="container">
+               <div class="home-about__auth mobile-only">
+                    <div class="btn-row">
+                        <a href="" class="btn btn-danger btn-shadow">新規入会申込み</a>
+                        <a href="" class="btn btn-warning btn-shadow">会員ログイン</a>
+                    </div>
+                </div>
+
+                <h1 class="home-about__title">わいず倶楽部<br>とは</h1>
+                <p class="home-about__description">
+                    地域や社会にかかわり、<em>人生を充実させたい。新しいことに挑戦したい。</em><br>
+                    「わいず倶楽部」は、そんな思いを持つ<em>55歳以上</em>の方を応援する読売新聞大阪本社の会員組織です。<br>
+                    <em>入会費・年会費は無料。読売新聞購読者以外の方も歓迎です。</em>
+                </p>
+                <div class="home-about__more">
+                    <a href="./about.html" class="btn btn-arrow btn-shadow hover">わいず倶楽部について</a>
+                </div>
+            </div>
+        </section><!--.home-about-->
+
+        <section class="home-summary">
+            <div class="container">
+                <ul class="home-summary__list">
+                    <li class="home-summary__item">
+                        <article class="home-summary-article home-summary-article--member">
+                            <i class="home-summary-article__icon"><img src="./img/home/article-member-icon.png" alt=""></i>
+                            <h1 class="home-summary-article__title">お得な会員特典</h1>
+                            <div class="home-summary-article__image"><img src="./img/home/article-member.jpg" alt=""></div>
+                            <p class="home-summary-article__description">展覧会の鑑賞や舞台公演の観劇、旅行など、読売新聞が提供するイベント等を紹介、読者の方には優待サービスも。</p>
+                            <div class="home-summary-article__more">
+                                <a href="" class="btn btn-arrow btn-small hover">会員特典について</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="home-summary__item">
+                        <article class="home-summary-article home-summary-article--club">
+                            <i class="home-summary-article__icon"><img src="./img/home/article-club-icon.png" alt=""></i>
+                            <h1 class="home-summary-article__title">これが大人の部活動</h1>
+                            <div class="home-summary-article__image"><img src="./img/home/article-club.jpg" alt=""></div>
+                            <p class="home-summary-article__description">大人の部活動。読売新聞が応援！ボランティア活動や各地に、会員でつくる「地位交流会」も結成されています。</p>
+                            <div class="home-summary-article__more">
+                                <a href="" class="btn btn-arrow btn-small hover">大人の部活動について</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="home-summary__item">
+                        <article class="home-summary-article home-summary-article--news">
+                            <i class="home-summary-article__icon"><img src="./img/home/article-news-icon.png" alt=""></i>
+                            <h1 class="home-summary-article__title">事務局だより</h1>
+                            <div class="home-summary-article__image"><img src="./img/home/article-news.jpg" alt=""></div>
+                            <p class="home-summary-article__description">「わいず倶楽部」事務局から、イベント、講演会等のご案内のほか、会員向けの情報を発信します。</p>
+                            <div class="home-summary-article__more">
+                                <a href="" class="btn btn-arrow btn-small hover">事務局だよりについて</a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section><!--.home-summary-->
+
+        <section class="home-pickup">
+            <div class="container">
+                <h1 class="home-pickup__title">Pick up!</h1>
+                <p class="home-pickup__description">
+                    ただいま募集中のイベントです。<br>
+                    <em>会員限定イベント</em>から、ボランティアなど<em>誰でも参加できるイベント、</em><br>
+                    <em>会員になる前のお試しイベント</em>などがございます。
+                </p>
+            </div>
+            <div class="home-pickup-carousel owl-carousel owl-responsive-class">
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category public">誰でも</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category private">会員限定</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category trial">お試し</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category public">誰でも</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category private">会員限定</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category trial">お試し</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category public">誰でも</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category private">会員限定</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category trial">お試し</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-pickup-carousel__item">
+                    <article class="home-pickup-article">
+                        <span class="home-pickup-article__category public">誰でも</span>
+                        <div class="home-pickup-article__image"><img src="http://placehold.it/358x202" alt=""></div>
+                        <h1 class="home-pickup-article__title">イベント名が入りますイベント名が入りますイベント名が入ります</h1>
+                        <p class="home-pickup-article__description">説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります</p>
+                        <div class="home-pickup-article__more">
+                            <a href="" class="hover">続きを見る</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <div class="home-pickup__more">
+                    <a href="./pickup.html" class="btn btn-arrow btn-shadow hover">Pick up 一覧はこちら</a>
+                </div>
+            </div>
+        </section><!--.home-pickup-->
+
+        <div class="home-info-wrapper">
+            <div class="container">
+                <!-- 右タブエリア -->
+                <div class="home-info__primary">
+                    <section class="home-info">
+                        <h1 class="home-info__title">新着情報</h1>
+                        <div class="home-info-tab-container tab-container">
+                            <div class="home-info-tab-nav tab-nav">
+                                <a href="#info-news" class="tab active">お知らせ</a>
+                                <a href="#info-report" class="tab">活動報告</a>
+                                <a href="#info-recruit" class="tab">募集中</a>
+                            </div>
+                            <section class="home-info-news tab-content" id="info-news">
+                                <ul class="home-info-news__list">
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <time class="home-info-news__date">2016年12月01日</time>
+                                        <span class="home-info-news__category">カテゴリ名</span>
+                                        <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                    </li>
+                                </ul>
+                                <div class="home-info-news__more">
+                                    <a href="" class="btn btn-secondary btn-arrow btn-small hover">お知らせ一覧</a>
+                                </div>
+                            </section><!--.home-info-news-->
+
+                            <section class="home-info-news home-info-news--thumbnail tab-content" id="info-report">
+                                <ul class="home-info-news__list">
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="home-info-news__more">
+                                    <a href="" class="btn btn-secondary btn-arrow btn-small hover">活動報告一覧</a>
+                                </div>
+                            </section><!--.home-info-news--report-->
+
+                            <section class="home-info-news home-info-news--thumbnail tab-content" id="info-recruit">
+                                <ul class="home-info-news__list">
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                    <li class="home-info-news__item">
+                                        <div class="home-info-news__image"><img src="http://placehold.it/180x120" alt=""></div>
+                                        <div class="home-info-news__content">
+                                            <span class="home-info-news__category">カテゴリ名</span>
+                                            <time class="home-info-news__date">2016年12月01日</time>
+                                            <a href="./news/001.html" class="home-info-news__title">タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="home-info-news__more">
+                                    <a href="" class="btn btn-secondary btn-arrow btn-small hover">募集中一覧</a>
+                                </div>
+                            </section><!--.home-info-news--recruit-->
+                        </div>
+                    </section>
+                </div>
+                <!-- 左バナーエリア -->
+                <div class="home-info__secondary">
+                    <section class="home-sidebar">
+                        <div class="home-sidebar-banner">
+                            <a href="" class="hover"><img data-desktop-src="./img/banner/register.png" data-mobile-src="./img/banner/register-mobile.png" alt="新規入会のご案内 55歳以上の方ならどのたでも！入会費・年会費 無料 読売新聞購読者以外の方も歓迎です！入会申込みはこちら"></a>
+                        </div>
+                        <nav class="home-sidebar-nav">
+                            <ul class="home-sidebar-nav__list">
+                                <li class="home-sidebar-nav__item"><a href="" class="hover">会員ログイン</a></li>
+                                <li class="home-sidebar-nav__item"><a href="" class="hover">新聞購読の手引き</a></li>
+                                <li class="home-sidebar-nav__item"><a href="" class="hover">活動パートナー</a></li>
+                            </ul>
+                        </nav>
+                        <div class="home-sidebar-banner-group">
+                            <div class="home-sidebar-banner">
+                                <a href="" class="hover" target="_blank" rel="noopener"><img data-desktop-src="./img/banner/facebook.png" data-mobile-src="./img/banner/facebook-mobile.png" alt="わいず倶楽部 公式フェイスブック"></a>
+                            </div>
+                            <div class="home-sidebar-banner">
+                                <a href="" class="hover" target="_blank" rel="noopener"><img data-desktop-src="./img/banner/yomidr.png" data-mobile-src="./img/banner/yomidr-mobile.png" alt="読売新聞の新しい医療サイト yomiDr. ヨミドクター"></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div><!--.home-info-->
+
+        <section class="home-banners">
+            <div class="container">
+                <div class="home-banners__ad">
+                    <a href="" target="_blank"><img src="http://placehold.it/336x280" alt=""></a>
+                </div>
+                <div class="home-banners__content">
+                    <h2 class="home-banners__title">PR</h2>
+                    <ul class="home-banners__list">
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                        <li class="home-banners__item"><a href=""><img src="http://placehold.it/205x70" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div><!--.site-body-->
+
+    <footer class="site-footer">
+        <a href="#top" class="pagetop hover" data-smoothscroll></a>
+
+        <div class="site-footer-top mobile-only">
+            <nav class="site-footer-top-nav">
+                <ul class="site-footer-top-nav__list">
+                    <li class="site-footer-top-nav__item"><a href=""><i class="fa fa-question-circle"></i> よくある質問</a></li>
+                    <li class="site-footer-top-nav__item"><a href=""><i class="fa fa-user"></i> プライバシーポリシー</a></li>
+                    <li class="site-footer-top-nav__item"><a href=""><i class="fa fa-sitemap"></i> サイトマップ</a></li>
+                </ul>
+                <div class="site-footer-top-auth container">
+                    <div class="btn-row">
+                        <a href="" class="btn btn-danger btn-shadow">新規入会申込み</a>
+                        <a href="" class="btn btn-warning btn-shadow">会員ログイン</a>
+                    </div>
+                </div>
+                <div class="site-footer-top-info container">
+                    <a href=""><img data-mobile-src="./img/common/footer-info-mobile.png" width="260" alt="読売新聞大阪本社 わいず倶楽部事務局 06-6366-2338 日祝除く 午前10時から午後5時"></a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="site-footer-main desktop-only">
+            <div class="container">
+                <div class="site-footer-main__primary">
+                    <p class="site-footer-logo"><a href="./" class="hover"><img data-desktop-src="./img/common/footer-logo.png" alt="わいず倶楽部 大人の部活動。読売新聞が応援！"></a></p>
+                    <div class="site-footer-register">
+                        <a href="" class="hover"><img data-desktop-src="./img/common/footer-register-btn.png" alt="新規入会申込み"></a>
+                    </div>
+                    <div class="site-footer-login">
+                        <a href="" class="hover"><img data-desktop-src="./img/common/footer-login-btn.png" alt="会員ログイン"></a>
+                    </div>
+                </div>
+                <div class="site-footer-main__secondary desktop-only">
+                    <nav class="site-footer-nav">
+                        <ul class="site-footer-nav__list">
+                            <li class="site-footer-nav__item"><a href="">わいず倶楽部トップ</a></li>
+                            <li class="site-footer-nav__item"><a href="">わいず倶楽部とは</a></li>
+                            <li class="site-footer-nav__item"><a href="">お得な会員情報</a></li>
+                            <li class="site-footer-nav__item"><a href="">事務局だより</a></li>
+                            <li class="site-footer-nav__item"><a href="">Pick up</a></li>
+                            <li class="site-footer-nav__item"><a href="">お知らせ</a></li>
+                            <li class="site-footer-nav__item"><a href="">活動報告</a></li>
+                            <li class="site-footer-nav__item"><a href="">募集中</a></li>
+                        </ul>
+                        <ul class="site-footer-nav__list">
+                            <li class="site-footer-nav__item"><a href="">これが大人の部活動</a>
+                                <ul class="site-footer-nav__sublist">
+                                    <li class="site-footer-nav__subitem"><a href="">ウォーク部</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">クリーン部</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">手話サポート部</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">俳句を楽しむ会</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">東大寺ボランティア</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">地域交流会</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">ゴルフ部</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">J.Jプロジェクト</a></li>
+                                    <li class="site-footer-nav__subitem"><a href="">蛍プロジェクト</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="site-footer-nav__list">
+                            <li class="site-footer-nav__item"><a href="">新聞購読の手引き</a></li>
+                            <li class="site-footer-nav__item"><a href="">活動パートナー</a></li>
+                            <li class="site-footer-nav__item"><a href="">新規入会のご案内</a></li>
+                            <li class="site-footer-nav__item"><a href="">会員ログイン</a></li>
+                        </ul>
+                        <ul class="site-footer-nav__list">
+                            <li class="site-footer-nav__item"><a href="">よくあるご質問</a></li>
+                            <li class="site-footer-nav__item"><a href="">お問い合わせ</a></li>
+                            <li class="site-footer-nav__item"><a href="">プライバシーポリシー</a></li>
+                            <li class="site-footer-nav__item"><a href="">サイトマップ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <p class="site-footer-copyright"><small>Copyright &copy; The Yomiuri Shimbun. All rights reserved.</small></p>
+        </div>
+    </footer><!--.site-footer-->
+</div>
+
+<!--[if lt IE 9]>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="./js/jquery-2.2.4.min.js"></script>
+<!--<![endif]-->
+<script src="./js/jquery.simplyscroll.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/js.cookie.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
